@@ -12,7 +12,7 @@
  <fanart></fanart>
  ]]></listrepeat>
 <expres>Server:"(.*?)" URL="(.*?)"; regex"(.*?)"</expres>
-<page>------------------------------------------------</page>
+<page>https://raw.githubusercontent.com/teamjmflist/list/master/listas%20team%20j2mf4</page>
 </regex>
 <regex>
 <name>makelist</name>
@@ -41,7 +41,7 @@
  <fanart></fanart>
  ]]></listrepeat>
 <expres>Server:"(.*?)" URL="(.*?)"; regex"(.*?)"</expres>
-<page>--------------------------------------------------------------</page>
+<page>https://raw.githubusercontent.com/teamjmflist/list/master/listas%20membros%20team%20j2mf4</page>
 </regex>
 <regex>
 <name>makelist</name>
@@ -91,7 +91,7 @@
 <item>
 	<title>[COLOR red]•[/COLOR][COLOR gold]  Canais Arenavision [/COLOR]</title>
 	<link>_</link>
-	<externallink>--------------------------------------------------------</externallink>
+	<externallink>https://raw.githubusercontent.com/teamjmflist/list/master/canais%20arenavision</externallink>
 	<thumbnail>http://playstore.juegos/wp-content/uploads/2015/12/Arenavision-Deporte-en-Directo.jpg</thumbnail>
 </item>
 
