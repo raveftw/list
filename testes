@@ -39,7 +39,7 @@
 
 <regex>
 <name>select_Url</name>
-<expres>$pyFunction: '$doregex[get_sxstream]' if not '$doregex[get_sxstream]'=='' else 'plugin://plugin.video.live.streamspro/?playitem=$doregex[getitem]' if not 'plugin://plugin.video.live.streamspro/?playitem=$doregex[getitem]'=='' else '$doregex[get_m5]' if not '$doregex[get_m5]'=='' else 'plugin://plugin.video.youtube/play/?video_id=CEGSitBJ7Gw'</expres>
+<expres>$pyFunction: '$doregex[get_sxstream]' if not '$doregex[get_sxstream]'=='' else 'plugin://plugin.video.live.streamspro/?playitem=$doregex[getitem]' if not '$doregex[getitem]'=='' else '$doregex[get_m5]' if not '$doregex[get_m5]'=='' else 'plugin://plugin.video.youtube/play/?video_id=CEGSitBJ7Gw'</expres>
 <page></page>
 </regex>
 
@@ -52,9 +52,17 @@
 <regex>
 <name>getitem</name>
 <expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m):
+def GetLSProData(page_data,Cookie_Jar,m, itemname='| [makelist.param3] |'):
     import urllib
-    return urllib.quote_plus(page_data)
+    import xml.etree.ElementTree as etree
+    xmlobj= etree.fromstring(page_data)
+    ret=''
+    for item in xmlobj.findall('item'):
+        if itemname in item.find('title').text:
+            ret=etree.tostring(item)
+            break
+    print 'reeeeeeeeee',ret
+    return urllib.quote_plus(ret)
 ]]></expres>
 <page>https://pastebin.com/raw/pWw0bvH3</page>
 </regex>
