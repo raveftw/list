@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<item>
+<title>[COLOR green]•[/COLOR][COLOR yellow]•[/COLOR][COLOR red]•[/COLOR][COLOR gold]  Listas Team j2mf4 [/COLOR]</title>
+<link>$doregex[makelist2]</link>
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+ <title>[COLOR green]•[/COLOR][COLOR yellow]•[/COLOR][COLOR red]•[/COLOR][COLOR gold]  [makelist2.param1][/COLOR]</title>
+ <link>$doregex[makelist]</link>
+ <thumbnail></thumbnail>
+ <fanart></fanart>
+ ]]></listrepeat>
+<expres>Server:"(.*?)" URL="(.*?)"; regex"(.*?)"</expres>
+<page>https://raw.githubusercontent.com/JCG-78/ALLinONE-addon/master/XML/Listas%20temporarias.xml</page>
+</regex>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+ <title>[COLOR green]•[/COLOR][COLOR yellow]•[/COLOR][COLOR red]•[/COLOR][COLOR gold]  [makelist.param1][/COLOR]</title>
+ <link>plugin://plugin.video.f4mTester/?url=[makelist.param2]&amp;streamtype=TSDOWNLOADER&amp;maxbitrate=0&amp;proxy=None&amp;name=ALLinONE [makelist.param1]</link>
+ <thumbnail>https://s15.postimg.org/hcacswixn/icon.png</thumbnail>
+ ]]></listrepeat>
+<expres>#EXTINF:-1,[makelist2.param3](.*?)\n(.*)</expres>
+<page>[makelist2.param2]</page>
+</regex>
+<thumbnail>http://www.transplanet.fr/image_interne/BASESPORT-TV.jpg</thumbnail>
+</item>
+
+
+
+<item>
+<title>[COLOR green]•[/COLOR][COLOR yellow]•[/COLOR][COLOR red]•[/COLOR][COLOR gold]  Listas dos membros da Team j2mf4 [/COLOR]</title>
+<link>$doregex[makelist2]</link>
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+ <title>[COLOR green]•[/COLOR][COLOR yellow]•[/COLOR][COLOR red]•[/COLOR][COLOR gold]  [makelist2.param1][/COLOR]</title>
+ <link>$doregex[makelist]</link>
+ <thumbnail></thumbnail>
+ <fanart></fanart>
+ ]]></listrepeat>
+<expres>Server:"(.*?)" URL="(.*?)"; regex"(.*?)"</expres>
+<page>https://raw.githubusercontent.com/JCG-78/ALLinONE-addon/master/XML/Listas%20temporarias.xml</page>
+</regex>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+ <title>[COLOR green]•[/COLOR][COLOR yellow]•[/COLOR][COLOR red]•[/COLOR][COLOR gold]  [makelist.param1][/COLOR]</title>
+ <link>plugin://plugin.video.f4mTester/?url=[makelist.param2]&amp;streamtype=TSDOWNLOADER&amp;maxbitrate=0&amp;proxy=None&amp;name=ALLinONE [makelist.param1]</link>
+ <thumbnail>https://s15.postimg.org/hcacswixn/icon.png</thumbnail>
+ ]]></listrepeat>
+<expres>#EXTINF:-1,[makelist2.param3](.*?)\n(.*)</expres>
+<page>[makelist2.param2]</page>
+</regex>
+<thumbnail>http://www.transplanet.fr/image_interne/BASESPORT-TV.jpg</thumbnail>
+</item>
+
+
+
+<item>
+<title>[COLOR green]•[/COLOR][COLOR yellow]•[/COLOR][COLOR red]•[/COLOR][COLOR gold]  Listas automáticas [/COLOR]</title>
+<thumbnail>https://s15.postimg.org/hcacswixn/icon.png</thumbnail><fanart>https://s15.postimg.org/hcacswixn/icon.png</fanart>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+     <title>[COLOR green]•[/COLOR][COLOR yellow]•[/COLOR][COLOR red]•[/COLOR][COLOR gold] Listas automáticas - mais recentes em primeiro [/COLOR]([makelist.param1])</title>
+    <link>_</link>
+    <externallink>[makelist.param1][DE]$$TSDOWNLOADER$$</externallink>
+]]></listrepeat>
+	<expres>(http:\/\/.*?\/.*?get.php.*?)&lt;</expres>
+<page>http://www.m3uliste.pw/</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+</item>
+
+
+
+<item>     
+<title>[COLOR green]•[/COLOR][COLOR yellow]•[/COLOR][COLOR red]•[/COLOR][COLOR gold]  Várias agendas desportivas - Plexus/Sopcast [/COLOR]</title>
+<link>_</link>
+<jsonrpc>plugin://plugin.video.plexus-streams?mode=400</jsonrpc>
+<thumbnail>https://i.ytimg.com/vi/6QZjrIIpjqE/hqdefault.jpg</thumbnail>
+<fanart>http://1.bp.blogspot.com/-hInkcWgAO-s/VeqGr9s60mI/AAAAAAAAIJc/gkRoUs-lDIM/s1600/fanart.jpg</fanart>
+</item>
+
+
+
+<item>
+	<title>[COLOR green]•[/COLOR][COLOR yellow]•[/COLOR][COLOR red]•[/COLOR][COLOR gold]  Canais Arenavision [/COLOR]</title>
+	<link>_</link>
+	<externallink>https://raw.githubusercontent.com/JCG-78/ALLinONE-addon/master/XML/Canais%20Arenavision.xml</externallink>
+	<thumbnail>http://playstore.juegos/wp-content/uploads/2015/12/Arenavision-Deporte-en-Directo.jpg</thumbnail>
+</item>
+
