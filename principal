@@ -27,7 +27,7 @@
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-     <title>[COLOR red]•[/COLOR][COLOR gold] Listas automáticas [/COLOR]([makelist.param1])</title>
+     <title>[COLOR red]•[/COLOR][COLOR gold] Lista automática de: [/COLOR]([makelist.param1])</title>
     <link>_</link>
     <externallink>[makelist.param1][DE]$$TSDOWNLOADER$$</externallink>
 ]]></listrepeat>
