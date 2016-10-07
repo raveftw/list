@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<channels>
+
+<channel>
+
+<name>[COLOR green]•[/COLOR][COLOR yellow]•[/COLOR][COLOR red]•[/COLOR][COLOR gold] Arenavision Acestream [/COLOR]</name>
+<thumbnail>http://i.imgur.com/ZuwELpP.png</thumbnail>
+<fanart>_</fanart>
+  
+<items>
+  
+<item>
+<link>plugin://program.plexus/?url=$doregex[hash]&amp;mode=1&amp;name=Arenavision 1 - Plexus </link>
+<regex>
+<name>hash</name>
+<expres>this.loadPlayer\("(.*?)"</expres>
+<page>http://www.arenavision.in/av1</page>
+<referer>http://www.arenavision.in</referer>
+<setcookie>beget=begetok</setcookie>
+</regex>
+<thumbnail>http://i.imgur.com/ZuwELpP.png</thumbnail>
+<title>[COLOR green]•[/COLOR][COLOR yellow]•[/COLOR][COLOR red]•[/COLOR][COLOR gold] Arenavision 1 - Plexus [/COLOR]</title>
+</item>
+
+
+<item>
+<link>plugin://program.plexus/?url=$doregex[hash]&amp;mode=1&amp;name=Arenavision 2 - Plexus </link>
+<regex>
+<name>hash</name>
+<expres>this.loadPlayer\("(.*?)"</expres>
+<page>http://www.arenavision.in/av2</page>
+<referer>http://www.arenavision.in</referer>
+<setcookie>beget=begetok</setcookie>
+</regex>
+<thumbnail>http://i.imgur.com/ZuwELpP.png</thumbnail>
+<title>[COLOR green]•[/COLOR][COLOR yellow]•[/COLOR][COLOR red]•[/COLOR][COLOR gold] Arenavision 2 - Plexus [/COLOR]</title>
+</item>
+
+
+<item>
+<link>plugin://program.plexus/?url=$doregex[hash]&amp;mode=1&amp;name=Arenavision 3 - Plexus </link>
+<regex>
+<name>hash</name>
+<expres>this.loadPlayer\("(.*?)"</expres>
+<page>http://www.arenavision.in/av3</page>
+<referer>http://www.arenavision.in</referer>
+<setcookie>beget=begetok</setcookie>
+</regex>
+<thumbnail>http://i.imgur.com/ZuwELpP.png</thumbnail>
+<title>[COLOR green]•[/COLOR][COLOR yellow]•[/COLOR][COLOR red]•[/COLOR][COLOR gold] Arenavision 3 - Plexus [/COLOR]</title>
+</item>
+
+
+<item>
+<link>plugin://program.plexus/?url=$doregex[hash]&amp;mode=1&amp;name=Arenavision 4 - Plexus </link>
+<regex>
+<name>hash</name>
+<expres>this.loadPlayer\("(.*?)"</expres>
+<page>http://www.arenavision.in/av4</page>
+<referer>http://www.arenavision.in</referer>
+<setcookie>beget=begetok</setcookie>
+</regex>
+<thumbnail>http://i.imgur.com/ZuwELpP.png</thumbnail>
+<title>[COLOR green]•[/COLOR][COLOR yellow]•[/COLOR][COLOR red]•[/COLOR][COLOR gold] Arenavision 4 - Plexus [/COLOR]</title>
+</item>
+
+
+<item>
+<link>plugin://program.plexus/?url=$doregex[hash]&amp;mode=1&amp;name=Arenavision 5 - Plexus </link>
+<regex>
+<name>hash</name>
+<expres>this.loadPlayer\("(.*?)"</expres>
+<page>http://www.arenavision.in/av5</page>
+<referer>http://www.arenavision.in</referer>
+<setcookie>beget=begetok</setcookie>
+</regex>
+<thumbnail>http://i.imgur.com/ZuwELpP.png</thumbnail>
+<title>[COLOR green]•[/COLOR][COLOR yellow]•[/COLOR][COLOR red]•[/COLOR][COLOR gold] Arenavision 5 - Plexus [/COLOR]</title>
+</item>
+
+
+<item>
+<link>plugin://program.plexus/?url=$doregex[hash]&amp;mode=1&amp;name=Arenavision 6 - Plexus </link>
+<regex>
+<name>hash</name>
+<expres>this.loadPlayer\("(.*?)"</expres>
+<page>http://www.arenavision.in/av6</page>
+<referer>http://www.arenavision.in</referer>
+<setcookie>beget=begetok</setcookie>
+</regex>
+<thumbnail>http://i.imgur.com/ZuwELpP.png</thumbnail>
+<title>[COLOR green]•[/COLOR][COLOR yellow]•[/COLOR][COLOR red]•[/COLOR][COLOR gold] Arenavision 6 - Plexus [/COLOR]</title>
+</item>
+
+
+<item>
+<link>plugin://program.plexus/?url=$doregex[hash]&amp;mode=1&amp;name=Arenavision 7 - Plexus </link>
+<regex>
+<name>hash</name>
+<expres>this.loadPlayer\("(.*?)"</expres>
+<page>http://www.arenavision.in/av7</page>
+<referer>http://www.arenavision.in</referer>
+<setcookie>beget=begetok</setcookie>
+</regex>
+<thumbnail>http://i.imgur.com/ZuwELpP.png</thumbnail>
+<title>[COLOR green]•[/COLOR][COLOR yellow]•[/COLOR][COLOR red]•[/COLOR][COLOR gold] Arenavision 7 - Plexus [/COLOR]</title>
+</item>
+
+
+<item>
+<link>plugin://program.plexus/?url=$doregex[hash]&amp;mode=1&amp;name=Arenavision 8 - Plexus </link>
+<regex>
+<name>hash</name>
+<expres>this.loadPlayer\("(.*?)"</expres>
+<page>http://www.arenavision.in/av8</page>
+<referer>http://www.arenavision.in</referer>
+<setcookie>beget=begetok</setcookie>
+</regex>
+<thumbnail>http://i.imgur.com/ZuwELpP.png</thumbnail>
+<title>[COLOR green]•[/COLOR][COLOR yellow]•[/COLOR][COLOR red]•[/COLOR][COLOR gold] Arenavision 8 - Plexus [/COLOR]</title>
+</item>
+
+
+<item>
+<link>plugin://program.plexus/?url=$doregex[hash]&amp;mode=1&amp;name=Arenavision 9 - Plexus </link>
+<regex>
+<name>hash</name>
+<expres>this.loadPlayer\("(.*?)"</expres>
+<page>http://www.arenavision.in/av9</page>
+<referer>http://www.arenavision.in</referer>
+<setcookie>beget=begetok</setcookie>
+</regex>
+<thumbnail>http://i.imgur.com/ZuwELpP.png</thumbnail>
+<title>[COLOR green]•[/COLOR][COLOR yellow]•[/COLOR][COLOR red]•[/COLOR][COLOR gold] Arenavision 9 - Plexus [/COLOR]</title>
+</item>
+
+
+<item>
+<link>plugin://program.plexus/?url=$doregex[hash]&amp;mode=1&amp;name= Arenavision 10 - Plexus </link>
+<regex>
+<name>hash</name>
+<expres>this.loadPlayer\("(.*?)"</expres>
+<page>http://www.arenavision.in/av10</page>
+<referer>http://www.arenavision.in</referer>
+<setcookie>beget=begetok</setcookie>
+</regex>
+<thumbnail>http://i.imgur.com/ZuwELpP.png</thumbnail>
+<title>[COLOR green]•[/COLOR][COLOR yellow]•[/COLOR][COLOR red]•[/COLOR][COLOR gold] Arenavision 10 - Plexus [/COLOR]</title>
+</item>
+
+
+<item>
+<link>plugin://program.plexus/?url=$doregex[hash]&amp;mode=1&amp;name=Arenavision 11 - Plexus </link>
+<regex>
+<name>hash</name>
+<expres>this.loadPlayer\("(.*?)"</expres>
+<page>http://www.arenavision.in/av11</page>
+<referer>http://www.arenavision.in</referer>
+<setcookie>beget=begetok</setcookie>
+</regex>
+<thumbnail>http://i.imgur.com/ZuwELpP.png</thumbnail>
+<title>[COLOR green]•[/COLOR][COLOR yellow]•[/COLOR][COLOR red]•[/COLOR][COLOR gold] Arenavision 11 - Plexus [/COLOR]</title>
+</item>
+
+
+<item>
+<link>plugin://program.plexus/?url=$doregex[hash]&amp;mode=1&amp;name=Arenavision 12 - Plexus </link>
+<regex>
+<name>hash</name>
+<expres>this.loadPlayer\("(.*?)"</expres>
+<page>http://www.arenavision.in/av12</page>
+<referer>http://www.arenavision.in</referer>
+<setcookie>beget=begetok</setcookie>
+</regex>
+<thumbnail>http://i.imgur.com/ZuwELpP.png</thumbnail>
+<title>[COLOR green]•[/COLOR][COLOR yellow]•[/COLOR][COLOR red]•[/COLOR][COLOR gold] Arenavision 12 - Plexus [/COLOR]</title>
+</item>
+
+
+<item>
+<link>plugin://program.plexus/?url=$doregex[hash]&amp;mode=1&amp;name=Arenavision 13 - Plexus </link>
+<regex>
+<name>hash</name>
+<expres>this.loadPlayer\("(.*?)"</expres>
+<page>http://www.arenavision.in/av13</page>
+<referer>http://www.arenavision.in</referer>
+<setcookie>beget=begetok</setcookie>
+</regex>
+<thumbnail>http://i.imgur.com/ZuwELpP.png</thumbnail>
+<title>[COLOR green]•[/COLOR][COLOR yellow]•[/COLOR][COLOR red]•[/COLOR][COLOR gold] Arenavision 13 - Plexus [/COLOR]</title>
+</item>
+
+
+<item>
+<link>plugin://program.plexus/?url=$doregex[hash]&amp;mode=1&amp;name=Arenavision 14 - Plexus </link>
+<regex>
+<name>hash</name>
+<expres>this.loadPlayer\("(.*?)"</expres>
+<page>http://www.arenavision.in/av14</page>
+<referer>http://www.arenavision.in</referer>
+<setcookie>beget=begetok</setcookie>
+</regex>
+<thumbnail>http://i.imgur.com/ZuwELpP.png</thumbnail>
+<title>[COLOR green]•[/COLOR][COLOR yellow]•[/COLOR][COLOR red]•[/COLOR][COLOR gold] Arenavision 14 - Plexus [/COLOR]</title>
+</item>
+
+
+<item>
+<link>plugin://program.plexus/?url=$doregex[hash]&amp;mode=1&amp;name=Arenavision 15 - Plexus </link>
+<regex>
+<name>hash</name>
+<expres>this.loadPlayer\("(.*?)"</expres>
+<page>http://www.arenavision.in/av15</page>
+<referer>http://www.arenavision.in</referer>
+<setcookie>beget=begetok</setcookie>
+</regex>
+<thumbnail>http://i.imgur.com/ZuwELpP.png</thumbnail>
+<title>[COLOR green]•[/COLOR][COLOR yellow]•[/COLOR][COLOR red]•[/COLOR][COLOR gold] Arenavision 15 - Plexus [/COLOR]</title>
+</item>
+
+
+<item>
+<link>plugin://program.plexus/?url=$doregex[hash]&amp;mode=1&amp;name=Arenavision 16 - Plexus </link>
+<regex>
+<name>hash</name>
+<expres>this.loadPlayer\("(.*?)"</expres>
+<page>http://www.arenavision.in/av16</page>
+<referer>http://www.arenavision.in</referer>
+<setcookie>beget=begetok</setcookie>
+</regex>
+<thumbnail>http://i.imgur.com/ZuwELpP.png</thumbnail>
+<title>[COLOR green]•[/COLOR][COLOR yellow]•[/COLOR][COLOR red]•[/COLOR][COLOR gold] Arenavision 16 - Plexus [/COLOR]</title>
+</item>
+
+
+<item>
+<link>plugin://program.plexus/?url=$doregex[hash]&amp;mode=1&amp;name=Arenavision 17 - Plexus </link>
+<regex>
+<name>hash</name>
+<expres>this.loadPlayer\("(.*?)"</expres>
+<page>http://www.arenavision.in/av17</page>
+<referer>http://www.arenavision.in</referer>
+<setcookie>beget=begetok</setcookie>
+</regex>
+<thumbnail>http://i.imgur.com/ZuwELpP.png</thumbnail>
+<title>[COLOR green]•[/COLOR][COLOR yellow]•[/COLOR][COLOR red]•[/COLOR][COLOR gold] Arenavision 17 - Plexus [/COLOR]</title>
+</item>
+
+
+<item>
+<link>plugin://program.plexus/?url=$doregex[hash]&amp;mode=1&amp;name=Arenavision 18 - Plexus </link>
+<regex>
+<name>hash</name>
+<expres>this.loadPlayer\("(.*?)"</expres>
+<page>http://www.arenavision.in/av18</page>
+<referer>http://www.arenavision.in</referer>
+<setcookie>beget=begetok</setcookie>
+</regex>
+<thumbnail>http://i.imgur.com/ZuwELpP.png</thumbnail>
+<title>[COLOR green]•[/COLOR][COLOR yellow]•[/COLOR][COLOR red]•[/COLOR][COLOR gold] Arenavision 18 - Plexus [/COLOR]</title>
+</item>
+
+
+<item>
+<link>plugin://program.plexus/?url=$doregex[hash]&amp;mode=1&amp;name=Arenavision 19 - Plexus </link>
+<regex>
+<name>hash</name>
+<expres>this.loadPlayer\("(.*?)"</expres>
+<page>http://www.arenavision.in/av19</page>
+<referer>http://www.arenavision.in</referer>
+<setcookie>beget=begetok</setcookie>
+</regex>
+<thumbnail>http://i.imgur.com/ZuwELpP.png</thumbnail>
+<title>[COLOR green]•[/COLOR][COLOR yellow]•[/COLOR][COLOR red]•[/COLOR][COLOR gold] Arenavision 19 - Plexus [/COLOR]</title>
+</item>
+
+
+<item>
+<link>plugin://program.plexus/?url=$doregex[hash]&amp;mode=1&amp;name=Arenavision 20 - Plexus </link>
+<regex>
+<name>hash</name>
+<expres>this.loadPlayer\("(.*?)"</expres>
+<page>http://www.arenavision.in/av20</page>
+<referer>http://www.arenavision.in</referer>
+<setcookie>beget=begetok</setcookie>
+</regex>
+<thumbnail>http://i.imgur.com/ZuwELpP.png</thumbnail>
+<title>[COLOR green]•[/COLOR][COLOR yellow]•[/COLOR][COLOR red]•[/COLOR][COLOR gold] Arenavision 20 - Plexus [/COLOR]</title>
+</item>
+
+
+<item>
+<link>plugin://program.plexus/?url=$doregex[hash]&amp;mode=1&amp;name=Arenavision 21 - Plexus </link>
+<regex>
+<name>hash</name>
+<expres>this.loadPlayer\("(.*?)"</expres>
+<page>http://www.arenavision.in/av21</page>
+<referer>http://www.arenavision.in</referer>
+<setcookie>beget=begetok</setcookie>
+</regex>
+<thumbnail>http://i.imgur.com/ZuwELpP.png</thumbnail>
+<title>[COLOR green]•[/COLOR][COLOR yellow]•[/COLOR][COLOR red]•[/COLOR][COLOR gold] Arenavision 21 - Plexus [/COLOR]</title>
+</item>
+
+
+<item>
+<link>plugin://program.plexus/?url=$doregex[hash]&amp;mode=1&amp;name=Arenavision 22 - Plexus </link>
+<regex>
+<name>hash</name>
+<expres>this.loadPlayer\("(.*?)"</expres>
+<page>http://www.arenavision.in/av22</page>
+<referer>http://www.arenavision.in</referer>
+<setcookie>beget=begetok</setcookie>
+</regex>
+<thumbnail>http://i.imgur.com/ZuwELpP.png</thumbnail>
+<title>[COLOR green]•[/COLOR][COLOR yellow]•[/COLOR][COLOR red]•[/COLOR][COLOR gold] Arenavision 22 - Plexus [/COLOR]</title>
+</item>
+
+
+<item>
+<link>plugin://program.plexus/?url=$doregex[hash]&amp;mode=1&amp;name=Arenavision 23 - Plexus </link>
+<regex>
+<name>hash</name>
+<expres>this.loadPlayer\("(.*?)"</expres>
+<page>http://www.arenavision.in/av23</page>
+<referer>http://www.arenavision.in</referer>
+<setcookie>beget=begetok</setcookie>
+</regex>
+<thumbnail>http://i.imgur.com/ZuwELpP.png</thumbnail>
+<title>[COLOR green]•[/COLOR][COLOR yellow]•[/COLOR][COLOR red]•[/COLOR][COLOR gold] Arenavision 23 - Plexus [/COLOR]</title>
+</item>
+
+
+<item>
+<link>plugin://program.plexus/?url=$doregex[hash]&amp;mode=1&amp;name=Arenavision 24 - Plexus </link>
+<regex>
+<name>hash</name>
+<expres>this.loadPlayer\("(.*?)"</expres>
+<page>http://www.arenavision.in/av24</page>
+<referer>http://www.arenavision.in</referer>
+<setcookie>beget=begetok</setcookie>
+</regex>
+<thumbnail>http://i.imgur.com/ZuwELpP.png</thumbnail>
+<title>[COLOR green]•[/COLOR][COLOR yellow]•[/COLOR][COLOR red]•[/COLOR][COLOR gold] Arenavision 24 - Plexus [/COLOR]</title>
+</item>
+
+
+<item>
+<link>plugin://program.plexus/?url=$doregex[hash]&amp;mode=1&amp;name=Arenavision 25 - Plexus </link>
+<regex>
+<name>hash</name>
+<expres>this.loadPlayer\("(.*?)"</expres>
+<page>http://www.arenavision.in/av25</page>
+<referer>http://www.arenavision.in</referer>
+<setcookie>beget=begetok</setcookie>
+</regex>
+<thumbnail>http://i.imgur.com/ZuwELpP.png</thumbnail>
+<title>[COLOR green]•[/COLOR][COLOR yellow]•[/COLOR][COLOR red]•[/COLOR][COLOR gold] Arenavision 25 - Plexus [/COLOR]</title>
+</item>
+
+
+<item>
+<link>plugin://program.plexus/?url=$doregex[hash]&amp;mode=1&amp;name=Arenavision 26 - Plexus </link>
+<regex>
+<name>hash</name>
+<expres>this.loadPlayer\("(.*?)"</expres>
+<page>http://www.arenavision.in/av26</page>
+<referer>http://www.arenavision.in</referer>
+<setcookie>beget=begetok</setcookie>
+</regex>
+<thumbnail>http://i.imgur.com/ZuwELpP.png</thumbnail>
+<title>[COLOR green]•[/COLOR][COLOR yellow]•[/COLOR][COLOR red]•[/COLOR][COLOR gold] Arenavision 26 - Plexus [/COLOR]</title>
+</item>
+
+
+<item>
+<link>plugin://program.plexus/?url=$doregex[hash]&amp;mode=1&amp;name=Arenavision 27 - Plexus </link>
+<regex>
+<name>hash</name>
+<expres>this.loadPlayer\("(.*?)"</expres>
+<page>http://www.arenavision.in/av27</page>
+<referer>http://www.arenavision.in</referer>
+<setcookie>beget=begetok</setcookie>
+</regex>
+<thumbnail>http://i.imgur.com/ZuwELpP.png</thumbnail>
+<title>[COLOR green]•[/COLOR][COLOR yellow]•[/COLOR][COLOR red]•[/COLOR][COLOR gold] Arenavision 27 - Plexus [/COLOR]</title>
+</item>
+
+
+<item>
+<link>plugin://program.plexus/?url=$doregex[hash]&amp;mode=1&amp;name=Arenavision 28 - Plexus </link>
+<regex>
+<name>hash</name>
+<expres>this.loadPlayer\("(.*?)"</expres>
+<page>http://www.arenavision.in/av28</page>
+<referer>http://www.arenavision.in</referer>
+<setcookie>beget=begetok</setcookie>
+</regex>
+<thumbnail>http://i.imgur.com/ZuwELpP.png</thumbnail>
+<title>[COLOR green]•[/COLOR][COLOR yellow]•[/COLOR][COLOR red]•[/COLOR][COLOR gold] Arenavision 28 - Plexus [/COLOR]</title>
+</item>
+
+
+<item>
+<link>plugin://program.plexus/?url=$doregex[hash]&amp;mode=1&amp;name=Arenavision 29 - Plexus </link>
+<regex>
+<name>hash</name>
+<expres>this.loadPlayer\("(.*?)"</expres>
+<page>http://www.arenavision.in/av29</page>
+<referer>http://www.arenavision.in</referer>
+<setcookie>beget=begetok</setcookie>
+</regex>
+<thumbnail>http://i.imgur.com/ZuwELpP.png</thumbnail>
+<title>[COLOR green]•[/COLOR][COLOR yellow]•[/COLOR][COLOR red]•[/COLOR][COLOR gold] Arenavision 29 - Plexus [/COLOR]</title>
+</item>
+
+
+<item>
+<link>plugin://program.plexus/?url=$doregex[hash]&amp;mode=1&amp;name=Arenavision 30 - Plexus </link>
+<regex>
+<name>hash</name>
+<expres>this.loadPlayer\("(.*?)"</expres>
+<page>http://www.arenavision.in/av30</page>
+<referer>http://www.arenavision.in</referer>
+<setcookie>beget=begetok</setcookie>
+</regex>
+<thumbnail>http://i.imgur.com/ZuwELpP.png</thumbnail>
+<title>[COLOR green]•[/COLOR][COLOR yellow]•[/COLOR][COLOR red]•[/COLOR][COLOR gold] Arenavision 30 - Plexus [/COLOR]</title>
+</item>
+
+</items>
+  
+</channel>
+
+<channel>
+  
+<name>[COLOR green]•[/COLOR][COLOR yellow]•[/COLOR][COLOR red]•[/COLOR][COLOR gold] Arenavision Sopcast [/COLOR]</name>
+<thumbnail>http://i.imgur.com/ZuwELpP.png</thumbnail>  
+<fanart>_</fanart>
+  
+<items>
+
+<item>
+<title>[COLOR green]•[/COLOR][COLOR yellow]•[/COLOR][COLOR red]•[/COLOR][COLOR gold] Arenavision S1 - Sopcast [/COLOR]</title>
+<link>plugin://program.plexus/?url=sop://broker.sopcast.com:$doregex[hash]&amp;mode=2&amp;name=Arenavision S1 - Sopcast </link>
+<thumbnail>http://i.imgur.com/ZuwELpP.png</thumbnail>
+<regex>
+<name>hash</name> 
+<expres>sop://broker.sopcast.com:(.*?)"</expres>
+<page>http://www.arenavision.in/avs1</page>
+<referer>http://www.arenavision.in</referer>
+<setcookie>beget=begetok</setcookie>
+</regex>
+</item>
+
+<item>
+<title>[COLOR green]•[/COLOR][COLOR yellow]•[/COLOR][COLOR red]•[/COLOR][COLOR gold] Arenavision S2 - Sopcast [/COLOR]</title>
+<link>plugin://program.plexus/?url=sop://broker.sopcast.com:$doregex[hash]&amp;mode=2&amp;name=Arenavision S2 - Sopcast </link>
+<thumbnail>http://i.imgur.com/ZuwELpP.png</thumbnail>
+<regex>
+<name>hash</name> 
+<expres>sop://broker.sopcast.com:(.*?)"</expres>
+<page>http://www.arenavision.in/avs2</page>
+<referer>http://www.arenavision.in</referer>
+<setcookie>beget=begetok</setcookie>
+</regex>
+</item>
+
+<item>
+<title>[COLOR green]•[/COLOR][COLOR yellow]•[/COLOR][COLOR red]•[/COLOR][COLOR gold] Arenavision S3 - Sopcast [/COLOR]</title>
+<link>plugin://program.plexus/?url=sop://broker.sopcast.com:$doregex[hash]&amp;mode=2&amp;name=Arenavision S3 - Sopcast </link>
+<thumbnail>http://i.imgur.com/ZuwELpP.png</thumbnail>
+<regex>
+<name>hash</name> 
+<expres>sop://broker.sopcast.com:(.*?)"</expres>
+<page>http://www.arenavision.in/avs3</page>
+<referer>http://www.arenavision.in</referer>
+<setcookie>beget=begetok</setcookie>
+</regex>
+</item>
+
+<item>
+<title>[COLOR green]•[/COLOR][COLOR yellow]•[/COLOR][COLOR red]•[/COLOR][COLOR gold] Arenavision S4 - Sopcast [/COLOR]</title>
+<link>plugin://program.plexus/?url=sop://broker.sopcast.com:$doregex[hash]&amp;mode=2&amp;name=Arenavision S4 - Sopcast </link>
+<thumbnail>http://i.imgur.com/ZuwELpP.png</thumbnail>
+<regex>
+<name>hash</name> 
+<expres>sop://broker.sopcast.com:(.*?)"</expres>
+<page>http://www.arenavision.in/avs4</page>
+<referer>http://www.arenavision.in</referer>
+<setcookie>beget=begetok</setcookie>
+</regex>
+</item>
+
+<item>
+<title>[COLOR green]•[/COLOR][COLOR yellow]•[/COLOR][COLOR red]•[/COLOR][COLOR gold] Arenavision S5 - Sopcast [/COLOR]</title>
+<link>plugin://program.plexus/?url=sop://broker.sopcast.com:$doregex[hash]&amp;mode=2&amp;name=Arenavision S5 - Sopcast </link>
+<thumbnail>http://i.imgur.com/ZuwELpP.png</thumbnail>
+<regex>
+<name>hash</name> 
+<expres>sop://broker.sopcast.com:(.*?)"</expres>
+<page>http://www.arenavision.in/avs5</page>
+<referer>http://www.arenavision.in</referer>
+<setcookie>beget=begetok</setcookie>
+</regex>
+</item>
+
+<item>
+<title>[COLOR green]•[/COLOR][COLOR yellow]•[/COLOR][COLOR red]•[/COLOR][COLOR gold] Arenavision S6 - Sopcast [/COLOR]</title>
+<link>plugin://program.plexus/?url=sop://broker.sopcast.com:$doregex[hash]&amp;mode=2&amp;name=Arenavision S6 - Sopcast </link>
+<thumbnail>http://i.imgur.com/ZuwELpP.png</thumbnail>
+<regex>
+<name>hash</name> 
+<expres>sop://broker.sopcast.com:(.*?)"</expres>
+<page>http://www.arenavision.in/avs6</page>
+<referer>http://www.arenavision.in</referer>
+<setcookie>beget=begetok</setcookie>
+</regex>
+</item>
+
+<item>
+<title>[COLOR green]•[/COLOR][COLOR yellow]•[/COLOR][COLOR red]•[/COLOR][COLOR gold] Arenavision S7 - Sopcast [/COLOR]</title>
+<link>plugin://program.plexus/?url=sop://broker.sopcast.com:$doregex[hash]&amp;mode=2&amp;name=Arenavision S7 - Sopcast </link>
+<thumbnail>http://i.imgur.com/ZuwELpP.png</thumbnail>
+<regex>
+<name>hash</name> 
+<expres>sop://broker.sopcast.com:(.*?)"</expres>
+<page>http://www.arenavision.in/avs7</page>
+<referer>http://www.arenavision.in</referer>
+<setcookie>beget=begetok</setcookie>
+</regex>
+</item>
+
+<item>
+<title>[COLOR green]•[/COLOR][COLOR yellow]•[/COLOR][COLOR red]•[/COLOR][COLOR gold] Arenavision S8 - Sopcast [/COLOR]</title>
+<link>plugin://program.plexus/?url=sop://broker.sopcast.com:$doregex[hash]&amp;mode=2&amp;name=Arenavision S8 - Sopcast </link>
+<thumbnail>http://i.imgur.com/ZuwELpP.png</thumbnail>
+<regex>
+<name>hash</name> 
+<expres>sop://broker.sopcast.com:(.*?)"</expres>
+<page>http://www.arenavision.in/avs8</page>
+<referer>http://www.arenavision.in</referer>
+<setcookie>beget=begetok</setcookie>
+</regex>
+</item>
+
+<item>
+<title>[COLOR green]•[/COLOR][COLOR yellow]•[/COLOR][COLOR red]•[/COLOR][COLOR gold] Arenavision S9 - Sopcast [/COLOR]</title>
+<link>plugin://program.plexus/?url=sop://broker.sopcast.com:$doregex[hash]&amp;mode=2&amp;name=Arenavision S9 - Sopcast </link>
+<thumbnail>http://i.imgur.com/ZuwELpP.png</thumbnail>
+<regex>
+<name>hash</name> 
+<expres>sop://broker.sopcast.com:(.*?)"</expres>
+<page>http://www.arenavision.in/avs9</page>
+<referer>http://www.arenavision.in</referer>
+<setcookie>beget=begetok</setcookie>
+</regex>
+</item>
+
+<item>
+<title>[COLOR green]•[/COLOR][COLOR yellow]•[/COLOR][COLOR red]•[/COLOR][COLOR gold] Arenavision S10 - Sopcast [/COLOR]</title>
+<link>plugin://program.plexus/?url=sop://broker.sopcast.com:$doregex[hash]&amp;mode=2&amp;name=Arenavision S10 - Sopcast </link>
+<thumbnail>http://i.imgur.com/ZuwELpP.png</thumbnail>
+<regex>
+<name>hash</name> 
+<expres>sop://broker.sopcast.com:(.*?)"</expres>
+<page>http://www.arenavision.in/avs10</page>
+<referer>http://www.arenavision.in</referer>
+<setcookie>beget=begetok</setcookie>
+</regex>
+</item>
+
+</items>
+  
+</channel>
+  
+</channels>
