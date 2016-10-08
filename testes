@@ -31,18 +31,18 @@
 
 
 <item>
-<title>sic</title>
-<link>http://noscdn1.connectedviews.com:1935/live/sic.stream/livestream.m3u8</link>
+<title>tvi</title>
+<link>http://video-live.iol.pt:1935/live_tvi/smil:LIVE_TVI/livestream.m3u8</link>
 </item>
 
 
 <item>
-<title>sic f4m</title>
-<link>plugin://plugin.video.f4mTester/?url=http://noscdn1.connectedviews.com:1935/live/sic.stream/livestream.m3u8;streamtype=TSDOWNLOADER&amp;name=SPORT TV 1</link>
+<title>tvi f4m</title>
+<link>plugin://plugin.video.f4mTester/?url=http://video-live.iol.pt:1935/live_tvi/smil:LIVE_TVI/livestream.m3u8;streamtype=TSDOWNLOADER&amp;name=SPORT TV 1</link>
 </item>
 
 
 <item>
-<title>sic f4m hls</title>
-<link>plugin://plugin.video.f4mTester/?url=http://noscdn1.connectedviews.com:1935/live/sic.stream/livestream.m3u8;streamtype=HLSRETRY&amp;name=SPORT TV 1</link>
+<title>tvi f4m hls</title>
+<link>plugin://plugin.video.f4mTester/?url=http://video-live.iol.pt:1935/live_tvi/smil:LIVE_TVI/livestream.m3u8;streamtype=HLSRETRY&amp;name=SPORT TV 1</link>
 </item>
