@@ -28,3 +28,9 @@
 <title>sport tv hd - f4m</title>
 <link>plugin://plugin.video.f4mTester/?url=http://localhd.tv:8081/live/newaboo/pRk5z6tACy/1721.ts;streamtype=TSDOWNLOADER&amp;name=SPORT TV 1</link>
 </item>
+
+
+<_item>
+<title>rtp 3</title>
+<link>http://37.187.167.137/live/blok/blok/3759.ts</link>
+</item>
