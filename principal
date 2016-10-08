@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 
 
-<item>
+<_item>
 	<title>[COLOR red]•[/COLOR][COLOR gold]  Listas Team j2mf4 [/COLOR]</title>
 	<link>_</link>
 	<externallink>https://raw.githubusercontent.com/teamjmflist/list/master/listas%20team%20j2mf4</externallink>
@@ -11,7 +11,7 @@
 
 
 <item>
-<title>[COLOR red]•[/COLOR][COLOR gold]  Listas Team j2mf4 - método 2[/COLOR]</title>
+<title>[COLOR red]•[/COLOR][COLOR gold]  Listas Team j2mf4[/COLOR]</title>
 <link>$doregex[makelist2]</link>
 <regex>
 <name>makelist2</name>
@@ -21,17 +21,17 @@
  <thumbnail>https://i.imgsafe.org/70b3b27c63.png</thumbnail>
  <fanart></fanart>
  ]]></listrepeat>
-<expres>Server:"(.*?)" URL="(.*?)"; regex"(.*?)"</expres>
-<page>https://raw.githubusercontent.com/teamjmflist/list/master/listas%20team%20-%20metodo%202</page>
+<expres>Lista:"(.*?)" URL="(.*?)"; regex"(.*?)"</expres>
+<page>https://raw.githubusercontent.com/teamjmflist/list/master/listas%20team%20j2mf4</page>
 </regex>
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
  <title>[COLOR red]•[/COLOR][COLOR gold]  [makelist.param1][/COLOR]</title>
- <link>plugin://plugin.video.f4mTester/?url=[makelist.param2]&amp;streamtype=TSDOWNLOADER&amp;maxbitrate=0&amp;proxy=None&amp;name=Team j2mf4 [makelist.param1]</link>
+ <link>plugin://plugin.video.f4mTester/?url=[makelist.param2]&amp;streamtype=TSDOWNLOADER&amp;maxbitrate=0&amp;proxy=None&amp;name=Team j2mf4: [makelist.param1]</link>
  <thumbnail>https://i.imgsafe.org/70b3b27c63.png</thumbnail>
  ]]></listrepeat>
-<expres>#EXTINF:-1,[makelist2.param3](.*?)\n(.*)</expres>
+<expres>#EXTINF:(.*?),[makelist2.param3](.*?)\n(.*)</expres>
 <page>[makelist2.param2]</page>
 </regex>
 <thumbnail>https://i.imgsafe.org/70b3b27c63.png</thumbnail>
@@ -39,14 +39,34 @@
 
 
 
-
 <item>
-	<title>[COLOR red]•[/COLOR][COLOR gold]  Listas dos membros da Team j2mf4 [/COLOR]</title>
-	<link>_</link>
-	<externallink>https://raw.githubusercontent.com/teamjmflist/list/master/listas%20membros%20team%20j2mf4</externallink>
-	<thumbnail>https://i.imgsafe.org/70b3b27c63.png</thumbnail>
-	<fanart>https://i.imgsafe.org/70b260028a.jpg</fanart>
+<title>[COLOR red]•[/COLOR][COLOR gold]  Listas dos membros da Team j2mf4[/COLOR]</title>
+<link>$doregex[makelist2]</link>
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+ <title>[COLOR red]•[/COLOR][COLOR gold]  [makelist2.param1][/COLOR]</title>
+ <link>$doregex[makelist]</link>
+ <thumbnail>https://i.imgsafe.org/70b3b27c63.png</thumbnail>
+ <fanart></fanart>
+ ]]></listrepeat>
+<expres>Lista:"(.*?)" URL="(.*?)"; regex"(.*?)"</expres>
+<page>https://raw.githubusercontent.com/teamjmflist/list/master/listas%20membros%20team%20j2mf4</page>
+</regex>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+ <title>[COLOR red]•[/COLOR][COLOR gold]  [makelist.param1][/COLOR]</title>
+ <link>plugin://plugin.video.f4mTester/?url=[makelist.param2]&amp;streamtype=TSDOWNLOADER&amp;maxbitrate=0&amp;proxy=None&amp;name=Team j2mf4: [makelist.param1]</link>
+ <thumbnail>https://i.imgsafe.org/70b3b27c63.png</thumbnail>
+ ]]></listrepeat>
+<expres>#EXTINF:(.*?),[makelist2.param3](.*?)\n(.*)</expres>
+<page>[makelist2.param2]</page>
+</regex>
+<thumbnail>https://i.imgsafe.org/70b3b27c63.png</thumbnail>
 </item>
+
+
 
 
 <item>
