@@ -31,7 +31,7 @@
  <link>plugin://plugin.video.f4mTester/?url=[makelist.param2]&amp;streamtype=TSDOWNLOADER&amp;maxbitrate=0&amp;proxy=None&amp;name=Team j2mf4: [makelist.param1]</link>
  <thumbnail>https://i.imgsafe.org/70b3b27c63.png</thumbnail>
  ]]></listrepeat>
-<expres>#EXTINF:(.*),[makelist2.param3](.*?)\n(.*)</expres>
+<expres>#EXTINF:-1,[makelist2.param3](.*?)\n(.*)</expres>
 <page>[makelist2.param2]</page>
 </regex>
 <thumbnail>https://i.imgsafe.org/70b3b27c63.png</thumbnail>
@@ -60,7 +60,7 @@
  <link>plugin://plugin.video.f4mTester/?url=[makelist.param2]&amp;streamtype=TSDOWNLOADER&amp;maxbitrate=0&amp;proxy=None&amp;name=Team j2mf4: [makelist.param1]</link>
  <thumbnail>https://i.imgsafe.org/70b3b27c63.png</thumbnail>
  ]]></listrepeat>
-<expres>#EXTINF:(.*),[makelist2.param3](.*?)\n(.*)</expres>
+<expres>#EXTINF:-1,[makelist2.param3](.*?)\n(.*)</expres>
 <page>[makelist2.param2]</page>
 </regex>
 <thumbnail>https://i.imgsafe.org/70b3b27c63.png</thumbnail>
