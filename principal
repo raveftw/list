@@ -27,11 +27,11 @@
 <name>makelist</name>
 <listrepeat><![CDATA[
  <title>[COLOR red]•[/COLOR][COLOR gold]  [makelist.param1][/COLOR]</title>
- <link>plugin://plugin.video.f4mTester/?url=[makelist.param2]&amp;streamtype=TSDOWNLOADER&amp;maxbitrate=0&amp;proxy=None&amp;name=Team j2mf4 [makelist.param1]</link>
+ <_link>plugin://plugin.video.f4mTester/?url=[makelist.param2]&amp;streamtype=TSDOWNLOADER&amp;maxbitrate=0&amp;proxy=None&amp;name=Team j2mf4 [makelist.param1]</link>
+ <expres>$pyFunction:'plugin://plugin.video.f4mTester/?url=[makelist.param2]&amp;streamtype=TSDOWNLOADER&amp;maxbitrate=0&amp;proxy=None&amp;name=Team j2mf4 [makelist.param1]' if ".ts" in '[makelist.param2]' else  '[makelist.param2]'</expres>
  <thumbnail>https://i.imgsafe.org/70b3b27c63.png</thumbnail>
  ]]></listrepeat>
 <expres>#EXTINF:-1,[makelist2.param3](.*?)\n(.*)</expres>
-<expres>$pyFunction:'plugin://plugin.video.f4mTester/?url=[makelist.param2]&amp;streamtype=TSDOWNLOADER&amp;maxbitrate=0&amp;proxy=None&amp;name=Team j2mf4 [makelist.param1]' if ".ts" in '[makelist.param2]' else  '[makelist.param2]'</expres>
 <page>[makelist2.param2]</page>
 </regex>
 <thumbnail>https://i.imgsafe.org/70b3b27c63.png</thumbnail>
