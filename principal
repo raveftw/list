@@ -26,14 +26,14 @@
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
- <title>[COLOR red]•[/COLOR][COLOR gold]  [makelist.param1][/COLOR]</title>
-  <___link>plugin://plugin.video.f4mTester/?url=[makelist.param2]&amp;streamtype=TSDOWNLOADER&amp;maxbitrate=0&amp;proxy=None&amp;name=ALLinONE [makelist.param1]</link>
- <link><expres>$pyFunction:'plugin://plugin.video.f4mTester/?url=[makelist.param2]&amp;streamtype=TSDOWNLOADER&amp;maxbitrate=0&amp;proxy=None&amp;name=ALLinONE [makelist.param1]' if ".ts" in '[makelist.param2]' else  '[makelist.param2]'</expres></link>
-  <thumbnail>https://i.imgsafe.org/70b3b27c63.png</thumbnail>
- ]]>
- </listrepeat>
- <expres>#EXTINF:-1,[makelist2.param3](.*?)\n(.*)</expres>
+<title>[COLOR red]•[/COLOR][COLOR gold]  [makelist.param1][/COLOR]</title>
+<link>plugin://plugin.video.f4mTester/?url=[makelist.param2]&amp;streamtype=TSDOWNLOADER&amp;maxbitrate=0&amp;proxy=None&amp;name=Team j2mf4 [makelist.param1]</link>
+<thumbnail>https://i.imgsafe.org/70b3b27c63.png</thumbnail>
+]]>
+</listrepeat>
+<expres>#EXTINF:-1,[makelist2.param3](.*?)\n(.*)</expres>
 <page>[makelist2.param2]</page>
+<expres>$pyFunction:'plugin://plugin.video.f4mTester/?url=[makelist.param2]&amp;streamtype=TSDOWNLOADER&amp;maxbitrate=0&amp;proxy=None&amp;name=Team j2mf4 [makelist.param1]' if ".ts" in '[makelist.param2]' else  '[makelist.param2]'</expres>
 </regex>
 <thumbnail>https://i.imgsafe.org/70b3b27c63.png</thumbnail>
 </item>
@@ -56,7 +56,7 @@
 <name>makelist</name>
 <listrepeat><![CDATA[
  <title>[COLOR red]•[/COLOR][COLOR gold]  [makelist.param1][/COLOR]</title>
- <link>plugin://plugin.video.f4mTester/?url=[makelist.param2]&amp;streamtype=TSDOWNLOADER&amp;maxbitrate=0&amp;proxy=None&amp;name=ALLinONE [makelist.param1]</link>
+ <link>plugin://plugin.video.f4mTester/?url=[makelist.param2]&amp;streamtype=TSDOWNLOADER&amp;maxbitrate=0&amp;proxy=None&amp;name=Team j2mf4 [makelist.param1]</link>
  <thumbnail>https://i.imgsafe.org/70b3b27c63.png</thumbnail>
  ]]></listrepeat>
 <expres>#EXTINF:-1,[makelist2.param3](.*?)\n(.*)</expres>
