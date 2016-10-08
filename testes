@@ -23,19 +23,8 @@
 <thumbnail>http://economico.sapo.pt/public/uploads/articles/1_novo_site/card_sporttv.jpg</thumbnail>
 </item>
 
-<item>
-<title>sport tv hd - m3u</title>
-<link>_</link>
-<externallink>https://raw.githubusercontent.com/teamjmflist/list/master/m3u%20test</externallink>
-</item>
 
-<item>
-<title>sport tv hd - link ts</title>
-<link>http://localhd.tv:8081/live/newaboo/pRk5z6tACy/1721.ts</link>
-</item>
-
-
-<item>
+<_item>
 <title>sport tv hd - f4m</title>
 <link>plugin://plugin.video.f4mTester/?url=http://localhd.tv:8081/live/newaboo/pRk5z6tACy/1721.ts;streamtype=TSDOWNLOADER&amp;name=SPORT TV 1</link>
 </item>
