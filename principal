@@ -28,7 +28,7 @@
 <listrepeat><![CDATA[
  <title>[COLOR red]•[/COLOR][COLOR gold]  [makelist.param1][/COLOR]</title>
   <___link>plugin://plugin.video.f4mTester/?url=[makelist.param2]&amp;streamtype=TSDOWNLOADER&amp;maxbitrate=0&amp;proxy=None&amp;name=ALLinONE [makelist.param1]</link>
- <expres>$pyFunction:'plugin://plugin.video.f4mTester/?url=[makelist.param2]&amp;streamtype=TSDOWNLOADER&amp;maxbitrate=0&amp;proxy=None&amp;name=ALLinONE [makelist.param1]' if ".ts" in '[makelist.param2]' else  '[makelist.param2]'</expres>
+ <expres>$pyFunction:'<link>plugin://plugin.video.f4mTester/?url=[makelist.param2]&amp;streamtype=TSDOWNLOADER&amp;maxbitrate=0&amp;proxy=None&amp;name=ALLinONE [makelist.param1]</link>' if ".ts" in '[makelist.param2]' else  '[makelist.param2]'</expres>
   <thumbnail>https://i.imgsafe.org/70b3b27c63.png</thumbnail>
  ]]>
  </listrepeat>
