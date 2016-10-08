@@ -36,6 +36,6 @@
 
 
 <item>
-<title>sport tv hd - $$TSDOWNLOADER$$</title>
-<link>http://localhd.tv:8081/live/newaboo/pRk5z6tACy/1721.ts$$TSDOWNLOADER$$</link>
+<title>sport tv hd - f4m</title>
+<link>plugin://plugin.video.f4mTester/?url=http://localhd.tv:8081/live/newaboo/pRk5z6tACy/1721.ts;streamtype=TSDOWNLOADER&amp;name=SPORT TV 1</link>
 </item>
