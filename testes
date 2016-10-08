@@ -33,3 +33,9 @@
 <title>sport tv hd - link ts</title>
 <link>http://localhd.tv:8081/live/newaboo/pRk5z6tACy/1721.ts</link>
 </item>
+
+
+<item>
+<title>sport tv hd - $$TSDOWNLOADER$$</title>
+<link>http://localhd.tv:8081/live/newaboo/pRk5z6tACy/1721.ts$$TSDOWNLOADER$$</link>
+</item>
