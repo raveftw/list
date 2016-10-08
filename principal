@@ -10,7 +10,7 @@
 </item>
 
 <item>
-<title>[COLOR red]•[/COLOR][COLOR gold]  Listas Team j2mf4 - método 2 - teste ts[/COLOR]</title>
+<title>[COLOR red]•[/COLOR][COLOR gold]  Listas Team j2mf4 - método 2 - ts[/COLOR]</title>
 <link>$doregex[makelist2]</link>
 <regex>
 <name>makelist2</name>
@@ -26,17 +26,19 @@
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[COLOR red]•[/COLOR][COLOR gold]  [makelist.param1][/COLOR]</title>
-<link>plugin://plugin.video.f4mTester/?url=[makelist.param2]&amp;streamtype=TSDOWNLOADER&amp;maxbitrate=0&amp;proxy=None&amp;name=Team j2mf4 [makelist.param1]</link>
-<thumbnail>https://i.imgsafe.org/70b3b27c63.png</thumbnail>
-]]>
-</listrepeat>
+ <title>[COLOR red]•[/COLOR][COLOR gold]  [makelist.param1][/COLOR]</title>
+ <link>plugin://plugin.video.f4mTester/?url=[makelist.param2]&amp;streamtype=TSDOWNLOADER&amp;maxbitrate=0&amp;proxy=None&amp;name=Team j2mf4 [makelist.param1]</link>
+ <thumbnail>https://i.imgsafe.org/70b3b27c63.png</thumbnail>
+ ]]></listrepeat>
 <expres>#EXTINF:-1,[makelist2.param3](.*?)\n(.*)</expres>
 <page>[makelist2.param2]</page>
-<_expres>$pyFunction:'plugin://plugin.video.f4mTester/?url=[makelist.param2]&amp;streamtype=TSDOWNLOADER&amp;maxbitrate=0&amp;proxy=None&amp;name=Team j2mf4 [makelist.param1]' if ".ts" in '[makelist.param2]' else  '[makelist.param2]'</expres>
 </regex>
 <thumbnail>https://i.imgsafe.org/70b3b27c63.png</thumbnail>
 </item>
+
+
+<_expres>$pyFunction:'plugin://plugin.video.f4mTester/?url=[makelist.param2]&amp;streamtype=TSDOWNLOADER&amp;maxbitrate=0&amp;proxy=None&amp;name=Team j2mf4 [makelist.param1]' if ".ts" in '[makelist.param2]' else  '[makelist.param2]'</expres>
+
 
 <item>
 <title>[COLOR red]•[/COLOR][COLOR gold]  Listas Team j2mf4 - método 2[/COLOR]</title>
