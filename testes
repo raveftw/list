@@ -34,3 +34,16 @@
 <title>rtp 3</title>
 <link>http://37.187.167.137/live/blok/blok/3759.ts</link>
 </item>
+
+
+<_item>
+<title>rtp 3 -1</title>
+<link>_</link>
+<externallink>https://raw.githubusercontent.com/teamjmflist/list/master/m3u%20-1</externallink>
+</item>
+
+<_item>
+<title>rtp 3 0</title>
+<link>_</link>
+<externallink>https://raw.githubusercontent.com/teamjmflist/list/master/m3u%200</externallink>
+</item>
