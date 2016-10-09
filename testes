@@ -7,6 +7,31 @@
 </item>
 
 
+<item>
+<title>[COLOR red]•[/COLOR][COLOR gold]  Listas automáticas - teste[/COLOR]</title>
+<thumbnail>https://i.imgsafe.org/70b3b27c63.png</thumbnail>
+<fanart>https://i.imgsafe.org/70b260028a.jpg</fanart>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+     <title>[COLOR red]•[/COLOR][COLOR gold] Lista automática de: [/COLOR]([makelist1])</title>
+    <link>_</link>
+    <externallink>[makelist.param1][DE]$$TSDOWNLOADER$$</externallink>
+]]></listrepeat>
+	<expres>(http:\/\/.*?\/.*?get.php.*?)&lt;</expres>
+<page>http://www.m3uliste.pw/</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
 
+<regex>
+<name>makelist1</name>
+	<expres>Update.*?&lt;</expres>
+<page>http://www.m3uliste.pw/</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+</item>
 
 
