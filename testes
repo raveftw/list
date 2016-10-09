@@ -1,11 +1,11 @@
 
 <item>
-<title>RTP-2</title>
+<title>BTV</title>
 <link>$doregex[getRtmp]</link>
 <regex>
 <name>getRtmp</name>
 <expres><![CDATA[iframe src=".*?(rtmp\:.*?)source]]></expres>
-<page>http://cxtv.biz/tvonline/canal/RTP-2.html</page>
+<page>http://cxtv.biz/tvonline/canal/btv1hd.html</page>
 <referer></referer>
 <agent>Mozilla/5.0</agent>
 <cookieJar></cookieJar>
