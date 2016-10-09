@@ -1,9 +1,13 @@
 
-
-
 <item>
-<title>Filme - teste</title>
-<link>https://17wy0zo.oloadcdn.net/dl/l/fSlaRZ_8LUaat7DT/yf2ZX712MHg/Star.Trek.Beyond.avi.mp4?mime=true</link>
+<title>RTP-2</title>
+<link>$doregex[getRtmp]</link>
+<regex>
+<name>getRtmp</name>
+<expres><![CDATA[iframe src=".*?(rtmp\:.*?)source]]></expres>
+<page>http://cxtv.biz/tvonline/canal/RTP-2.html</page>
+<referer></referer>
+<agent>Mozilla/5.0</agent>
+<cookieJar></cookieJar>
+</regex>
 </item>
-
-
