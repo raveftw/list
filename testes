@@ -12,7 +12,44 @@
 <link>https://r20---sn-5hne6nld.c.drive.google.com/videoplayback?requiressl=yes&id=45e3917249a59fe2&itag=37&source=webdrive&ttl=transient&app=texmex&ip=2a00:d880:5:96c::5932&ipbits=32&expire=1475995281&cp=QVJMV0pfVFJWQlhNOjlrTWJwandlSVRW&sparams=requiressl%2Cid%2Citag%2Csource%2Cttl%2Cip%2Cipbits%2Cexpire%2Ccp&signature=673271F6EFA9F11F7C91E3E251D96BE7BDF878EA.A02829D2E02E4B7CDF3CCE7452D59E33507D5004&key=ck2&mm=30&mn=sn-5hne6nld&ms=nxu&mt=1475980803&mv=u&nh=IgpwcjAzLmFtczE2KgkxMjcuMC4wLjE&pl=46&sc=yes</link>
 </item>
 
+<item>
+<title>tv-msn Regex http://tv-msn.com/ae.html</title>
+<link>$doregex[rtmp] swfUrl=http://www.tv-msn.com/player/player.swf pageUrl=http://tv-msn.com live=1 timeout=15</link>
+<regex>
+<name>rtmp</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+ import requests
+ import re
+ import base64
 
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Referer' : 'http://tv-msn.com/ae.html'}
+ url = 'http://tv-msn.com/ae.php'
+
+ r1 = requests.get(url, headers=headers)
+
+ source = r1.text
+ streamfn = re.findall('streamer: (.*?)\(', source)[0]
+ formula = re.search(r'function ' + streamfn + '.*\n.*\[(.*?)\].*?,.*?"(.*?)".*?\((.*?).join.*?ById.*?ById."(.*?)".*?ById.*?ById."(.*?)"', source)
+ pos = int(re.findall('id=' + formula.group(2) + '.(.*?)..span', source)[0])
+ par1 = formula.group(1).replace('\"', '').replace(',', '')
+ pat1 = (par1[pos:] + par1[:pos]).replace('\\/', '/')
+ par2 = (re.findall('var ' + formula.group(3) + '.*?(".*?)\]', source)[0]).replace('\"', '').replace(',', '')
+ pat2 = par2[pos:] + par2[:pos]
+ par3 = re.findall('id=' + formula.group(4) + '.(.*?)..span', source)[0]
+ pat3 = par3[pos:] + par3[:pos]
+ par4 = re.findall('id=' + formula.group(5) + '.(.*?)..span', source)[0]
+ pat4 = par4[pos:] + par4[:pos]
+ filefn = re.findall('file: (.*?)\(', source)[0]
+ pat5 = (re.findall('function ' + filefn + '.*\n.*\[(.*?)\]', source)[0]).replace('\"', '').replace(',', '')
+ pat6 = base64.b64decode('ZXNwZXJv')
+ rtmppath = pat1 + pat2 + pat3 + pat4 + ' playpath=' + pat5 + ' token=' + pat6
+ return rtmppath
+]]></expres>
+<page></page>
+</regex>
+<thumbnail></thumbnail>
+</item>
 
 
 
