@@ -11,7 +11,7 @@
 <items>
 
 <item>
-<title>[COLOR red]•[/COLOR][COLOR gold] SPORT TV 1[/COLOR]</title>
+<title>[COLOR red]•[/COLOR][COLOR gold] Sport TV 1[/COLOR]</title>
 <link>$doregex[select_Url]</link>
 <regex>
 <name>select_Url</name>
@@ -36,7 +36,7 @@
 </item>
 
 <item>
-<title>[COLOR red]•[/COLOR][COLOR gold] SPORT TV 2[/COLOR]</title>
+<title>[COLOR red]•[/COLOR][COLOR gold] Sport TV 2[/COLOR]</title>
 <link>$doregex[select_Url]</link>
 <regex>
 <name>select_Url</name>
@@ -61,7 +61,7 @@
 </item>
 
 <item>
-<title>[COLOR red]•[/COLOR][COLOR gold] SPORT TV 3[/COLOR]</title>
+<title>[COLOR red]•[/COLOR][COLOR gold] Sport TV 3[/COLOR]</title>
 <link>$doregex[select_Url]</link>
 <regex>
 <name>select_Url</name>
@@ -86,7 +86,7 @@
 </item>
 
 <item>
-<title>[COLOR red]•[/COLOR][COLOR gold] SPORT TV 4[/COLOR]</title>
+<title>[COLOR red]•[/COLOR][COLOR gold] Sport TV 4[/COLOR]</title>
 <link>$doregex[select_Url]</link>
 <regex>
 <name>select_Url</name>
@@ -111,7 +111,7 @@
 </item>
 
 <item>
-<title>[COLOR red]•[/COLOR][COLOR gold] SPORT TV 5[/COLOR]</title>
+<title>[COLOR red]•[/COLOR][COLOR gold] Sport TV 5[/COLOR]</title>
 <link>$doregex[select_Url]</link>
 <regex>
 <name>select_Url</name>
