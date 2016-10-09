@@ -12,7 +12,62 @@
 <link>https://r20---sn-5hne6nld.c.drive.google.com/videoplayback?requiressl=yes&id=45e3917249a59fe2&itag=37&source=webdrive&ttl=transient&app=texmex&ip=2a00:d880:5:96c::5932&ipbits=32&expire=1475995281&cp=QVJMV0pfVFJWQlhNOjlrTWJwandlSVRW&sparams=requiressl%2Cid%2Citag%2Csource%2Cttl%2Cip%2Cipbits%2Cexpire%2Ccp&signature=673271F6EFA9F11F7C91E3E251D96BE7BDF878EA.A02829D2E02E4B7CDF3CCE7452D59E33507D5004&key=ck2&mm=30&mn=sn-5hne6nld&ms=nxu&mt=1475980803&mv=u&nh=IgpwcjAzLmFtczE2KgkxMjcuMC4wLjE&pl=46&sc=yes</link>
 </item>
 
+<item>
+<title>TEST | BBC News - FILMON</title>
+<link>plugin://plugin.video.f4mTester/?streamtype=HLSRETRY&amp;url=$doregex[get-url]</link>
 
+<regex>
+<name>get-url</name>
+<expres><![CDATA[#$pyFunction
+def getCookiesString(cookieJar):
+   try:
+       cookieString=""
+       for index, cookie in enumerate(cookieJar):
+           cookieString+=cookie.name + "=" + cookie.value +";"
+   except: pass
+   #print 'cookieString',cookieString
+   return cookieString
+
+def f4mcallback(param, type, error, Cookie_Jar, url, headers):
+ if type==1:
+   newurl=getUrl(param,Cookie_Jar)
+   oldservername=url.split('/')[2]
+   newserver=newurl.split('/')
+   newserver[2]=oldservername
+   newurl='/'.join(newserver)
+   return newurl,Cookie_Jar
+ else:
+   return '',None
+
+def getUrl(param, Cookie_Jar):
+ import requests, re, urllib, inspect
+ headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36'}
+ url = 'http://www.filmon.com/tv/channel/export?channel_id='+param
+ session = requests.session()
+ session.cookies = Cookie_Jar
+ source= session.get(url, headers = headers)
+ swf = re.findall('streamer":"(.*?)"', source.text)[0]
+ cleanswf = swf.replace('\\/','/')
+ referer = 'http://www.filmon.com' + cleanswf
+ headers1 = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36', 'Referer': url, 'X-Requested-With': 'XMLHttpRequest'}
+ url2 = 'http://www.filmon.com/api-v2/channel/%s?protocol=hls'%param
+ source1= session.get(url2, headers = headers1)
+ getHD = re.findall('"high","url":"([^"]+)"', source1.text)[0]
+ return getHD
+
+def GetLSProData(page_data,Cookie_Jar,m):
+ import os,urllib
+ callbackfunction=os.path.realpath(__file__)
+ callbackparam='27'
+ url=getUrl('27',Cookie_Jar)
+ referer = 'http://www.filmon.com/'
+ print 'url',url
+ return urllib.quote_plus (url + '|Referer=' + referer+'&cookie='+getCookiesString(Cookie_Jar)+'&User-Agent=Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36') +'&callbackpath='+urllib.quote_plus(callbackfunction)+'&callbackparam='+urllib.quote_plus(callbackparam)
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+<thumbnail>http://obamapacman.com/wp-content/uploads/2011/06/BBC-Logo-iPad.jpg</thumbnail>
+</item>
 
 
 
