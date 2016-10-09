@@ -1,11 +1,27 @@
 
 <item>
-<title>BTV</title>
+<title>test</title>
 <link>$doregex[getRtmp]</link>
 <regex>
 <name>getRtmp</name>
 <expres><![CDATA[iframe src=".*?(rtmp\:.*?)source]]></expres>
-<page>http://cxtv.biz/tvonline/canal/btv1hd.html</page>
+<page>http://ptiptv.dyndns.tv:8000/live/server234/9023472983749/633.m3u8</page>
+<referer></referer>
+<agent>Mozilla/5.0</agent>
+<cookieJar></cookieJar>
+</regex>
+</item>
+
+
+
+
+<item>
+<title>test 2</title>
+<link>$doregex[getRtmp]</link>
+<regex>
+<name>getRtmp</name>
+<expres><![CDATA[iframe src=".*?(rtmp\:.*?)source]]></expres>
+<page>http://cxtv.biz/d59c1b80-3160-42dc-886c-337629e8bc09</page>
 <referer></referer>
 <agent>Mozilla/5.0</agent>
 <cookieJar></cookieJar>
