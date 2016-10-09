@@ -1,5 +1,5 @@
 <item>
-<title>SPORT TV 1</title>
+<title>[COLOR red]•[/COLOR][COLOR gold] SPORT TV 1[/COLOR]</title>
 <link>$doregex[select_Url]</link>
 <regex>
 <name>select_Url</name>
@@ -23,46 +23,105 @@
 <thumbnail>http://economico.sapo.pt/public/uploads/articles/1_novo_site/card_sporttv.jpg</thumbnail>
 </item>
 
-
 <item>
-<title>TEST | ligtvkafe.de/kanal1.html | rtmp</title>
-<link>rtmp://$doregex[rtmp]/live playpath=$doregex[get_channel]?id=$doregex[id]&amp;pk=$doregex[pk] conn=S:OK swfUrl=$doregex[swf] flashVer=WIN\2023,0,0,162 swfVfy=1 live=1 timeout=13 pageUrl=http://www.janjuaplayer.com/</link>
+<title>[COLOR red]•[/COLOR][COLOR gold] SPORT TV 2[/COLOR]</title>
+<link>$doregex[select_Url]</link>
 <regex>
-<name>rtmp</name>
-<expres>redirect=(.*)<expres>
-<page>http://www.janjuapublisher.com:1935/loadbalancer</page>
-<referer>http://www.janjuaplayer.com/</referer>
-<agent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36</agent>
+<name>select_Url</name>
+<expres>$pyFunction: '$doregex[get_sxstream]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36' if not '$doregex[get_sxstream]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'=='' else '$doregex[get_sxstream1]|User-Agent=iPhone'</expres>
+<page></page>
 </regex>
 <regex>
-<name>id</name>
-<expres>'id=(.*?)\W</expres>
-<page>http://www.janjuaplayer.com/embedplayer/$doregex[get_channel]/1/700/400</page>
-<referer>http://www.ligtvkafe.de/</referer>
-<agent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36</agent>
+<name>get_sxstream</name>
+<expres>src=.*[",'](.*m3u8.*?)[",']</expres>
+<page>http://www.liveonlinetv247.info/embed/sporttv2.php</page>
+<referer>http://www.liveonlinetv247.info/</referer>
+<agent></agent>
 </regex>
 <regex>
-<name>pk</name>
-<expres>pk=(.*?)'</expres>
-<page>http://www.janjuaplayer.com/embedplayer/$doregex[get_channel]/1/700/400</page>
-<referer>http://www.ligtvkafe.de/</referer>
-<agent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36</agent>
+<name>get_sxstream1</name>
+<expres>src=.*[",'](.*m3u8.*?)[",']</expres>
+<page>http://www.liveonlinetv247.info/embed/sporttv2.php</page>
+<referer>http://www.liveonlinetv247.info/</referer>
+<agent></agent>
 </regex>
-<regex>
-<name>swf</name><expres>new SWFObject."(.*?)"</expres>
-<page>http://www.janjuaplayer.com/embedplayer/$doregex[get_channel]/1/700/400</page>
-<referer>http://www.ligtvkafe.de/</referer>
-<agent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36</agent>
-</regex>
-<regex>
-<name>get_channel</name>
-<expres>channel='(.*?)'</expres>
-<page>http://www.ligtvkafe.de/iframe.html</page>
-</regex>
-<thumbnail></thumbnail>
-<fanart></fanart>
+<thumbnail>http://economico.sapo.pt/public/uploads/articles/1_novo_site/card_sporttv.jpg</thumbnail>
 </item>
 
+<item>
+<title>[COLOR red]•[/COLOR][COLOR gold] SPORT TV 3[/COLOR]</title>
+<link>$doregex[select_Url]</link>
+<regex>
+<name>select_Url</name>
+<expres>$pyFunction: '$doregex[get_sxstream]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36' if not '$doregex[get_sxstream]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'=='' else '$doregex[get_sxstream1]|User-Agent=iPhone'</expres>
+<page></page>
+</regex>
+<regex>
+<name>get_sxstream</name>
+<expres>src=.*[",'](.*m3u8.*?)[",']</expres>
+<page>http://www.liveonlinetv247.info/embed/sporttv3.php</page>
+<referer>http://www.liveonlinetv247.info/</referer>
+<agent></agent>
+</regex>
+<regex>
+<name>get_sxstream1</name>
+<expres>src=.*[",'](.*m3u8.*?)[",']</expres>
+<page>http://www.liveonlinetv247.info/embed/sporttv3.php</page>
+<referer>http://www.liveonlinetv247.info/</referer>
+<agent></agent>
+</regex>
+<thumbnail>http://economico.sapo.pt/public/uploads/articles/1_novo_site/card_sporttv.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR red]•[/COLOR][COLOR gold] SPORT TV 4[/COLOR]</title>
+<link>$doregex[select_Url]</link>
+<regex>
+<name>select_Url</name>
+<expres>$pyFunction: '$doregex[get_sxstream]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36' if not '$doregex[get_sxstream]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'=='' else '$doregex[get_sxstream1]|User-Agent=iPhone'</expres>
+<page></page>
+</regex>
+<regex>
+<name>get_sxstream</name>
+<expres>src=.*[",'](.*m3u8.*?)[",']</expres>
+<page>http://www.liveonlinetv247.info/embed/sporttv4.php</page>
+<referer>http://www.liveonlinetv247.info/</referer>
+<agent></agent>
+</regex>
+<regex>
+<name>get_sxstream1</name>
+<expres>src=.*[",'](.*m3u8.*?)[",']</expres>
+<page>http://www.liveonlinetv247.info/embed/sporttv4.php</page>
+<referer>http://www.liveonlinetv247.info/</referer>
+<agent></agent>
+</regex>
+<thumbnail>http://economico.sapo.pt/public/uploads/articles/1_novo_site/card_sporttv.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR red]•[/COLOR][COLOR gold] SPORT TV 5[/COLOR]</title>
+<link>$doregex[select_Url]</link>
+<regex>
+<name>select_Url</name>
+<expres>$pyFunction: '$doregex[get_sxstream]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36' if not '$doregex[get_sxstream]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'=='' else '$doregex[get_sxstream1]|User-Agent=iPhone'</expres>
+<page></page>
+</regex>
+<regex>
+<name>get_sxstream</name>
+<expres>src=.*[",'](.*m3u8.*?)[",']</expres>
+<page>http://www.liveonlinetv247.info/embed/sporttv5.php</page>
+<referer>http://www.liveonlinetv247.info/</referer>
+<agent></agent>
+</regex>
+<regex>
+<name>get_sxstream1</name>
+<expres>src=.*[",'](.*m3u8.*?)[",']</expres>
+<page>http://www.liveonlinetv247.info/embed/sporttv5.php</page>
+<referer>http://www.liveonlinetv247.info/</referer>
+<agent></agent>
+</regex>
+<thumbnail>http://economico.sapo.pt/public/uploads/articles/1_novo_site/card_sporttv.jpg</thumbnail>
+</item>
 
 <_item>
 <title>tvi f4m hls</title>
