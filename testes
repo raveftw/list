@@ -123,6 +123,16 @@
 <thumbnail>http://economico.sapo.pt/public/uploads/articles/1_novo_site/card_sporttv.jpg</thumbnail>
 </item>
 
+
+
+
+
+<item>
+<title>Filme teste</title>
+<link>https://1fgm90c.oloadcdn.net/dl/l/Mdc4sOeqlVgwuXDm/EOTkjctMJDc/Teenage.Mutant.Ninja.Turtles.Out.of.the.Shadows.avi.mp4?mime=true</link>
+</item>
+
+
 <_item>
 <title>tvi f4m hls</title>
 <link>plugin://plugin.video.f4mTester/?url=http://video-live.iol.pt:1935/live_tvi/smil:LIVE_TVI/livestream.m3u8;streamtype=HLSRETRY&amp;name=SPORT TV 1</link>
