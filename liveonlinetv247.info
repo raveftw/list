@@ -1,3 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<channels>
+
+<channel>
+
+<name>[COLOR red]•[/COLOR][COLOR gold] Sport TV [/COLOR]</name>
+<thumbnail>http://economico.sapo.pt/public/uploads/articles/1_novo_site/card_sporttv.jpg</thumbnail>
+<fanart>_</fanart>
+
+<items>
+
 <item>
 <title>[COLOR red]•[/COLOR][COLOR gold] SPORT TV 1[/COLOR]</title>
 <link>$doregex[select_Url]</link>
@@ -122,6 +134,20 @@
 </regex>
 <thumbnail>http://economico.sapo.pt/public/uploads/articles/1_novo_site/card_sporttv.jpg</thumbnail>
 </item>
+
+</items>
+
+</channel>
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+<channel>
+
+<name>[COLOR red]•[/COLOR][COLOR gold] beIN Sports [/COLOR]</name>
+<thumbnail>http://economico.sapo.pt/public/uploads/articles/1_novo_site/card_sporttv.jpg</thumbnail>
+<fanart>_</fanart>
+
+<items>
 
 <item>
 <title>[COLOR red]•[/COLOR][COLOR gold] beIN Sports News[/COLOR]</title>
@@ -547,3 +573,8 @@
 </regex>
 <thumbnail>https://lh4.ggpht.com/gwui-zPW6e3XsJwtp8lLNAajXooBk-bJzBighS1ixOZBZGubBRByWaqzPfGYq1HAVOk=w300</thumbnail>
 </item>
+
+</items>
+
+</channel>
+
