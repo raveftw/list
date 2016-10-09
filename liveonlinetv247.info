@@ -963,17 +963,69 @@
 <thumbnail>http://vignette2.wikia.nocookie.net/f1forbbc/images/3/35/Sky-sports-252-1-.jpg/revision/latest?cb=20110827140938</thumbnail>
 </item>
 
-
-
 </items>
 
 </channel>
 
+------------------------------------------------------------------------------------------------------------------------------
 
+<channel>
 
+<name>[COLOR red]•[/COLOR][COLOR gold] Fox Sports [/COLOR]</name>
+<thumbnail>http://media.foxsports.com.au/digital/images/livestreams/fsnlivestream/FSN_Live_Stream_End.jpg</thumbnail>
+<fanart>_</fanart>
 
+<items>
 
+<item>
+<title>[COLOR red]•[/COLOR][COLOR gold] Fox Sport 1 [/COLOR]</title>
+<link>$doregex[select_Url]</link>
+<regex>
+<name>select_Url</name>
+<expres>$pyFunction: '$doregex[get_sxstream]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36' if not '$doregex[get_sxstream]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'=='' else '$doregex[get_sxstream1]|User-Agent=iPhone'</expres>
+<page></page>
+</regex>
+<regex>
+<name>get_sxstream</name>
+<expres>src=.*[",'](.*m3u8.*?)[",']</expres>
+<page>http://www.liveonlinetv247.info/embed/foxsports1.php</page>
+<referer>http://www.liveonlinetv247.info/</referer>
+<agent></agent>
+</regex>
+<regex>
+<name>get_sxstream1</name>
+<expres>src=.*[",'](.*m3u8.*?)[",']</expres>
+<page>http://www.liveonlinetv247.info/embed/foxsports1.php</page>
+<referer>http://www.liveonlinetv247.info/</referer>
+<agent></agent>
+</regex>
+<thumbnail>http://media.foxsports.com.au/digital/images/livestreams/fsnlivestream/FSN_Live_Stream_End.jpg</thumbnail>
+</item>
 
+<item>
+<title>[COLOR red]•[/COLOR][COLOR gold] Fox Sport 2 [/COLOR]</title>
+<link>$doregex[select_Url]</link>
+<regex>
+<name>select_Url</name>
+<expres>$pyFunction: '$doregex[get_sxstream]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36' if not '$doregex[get_sxstream]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'=='' else '$doregex[get_sxstream1]|User-Agent=iPhone'</expres>
+<page></page>
+</regex>
+<regex>
+<name>get_sxstream</name>
+<expres>src=.*[",'](.*m3u8.*?)[",']</expres>
+<page>http://www.liveonlinetv247.info/embed/foxsports2.php</page>
+<referer>http://www.liveonlinetv247.info/</referer>
+<agent></agent>
+</regex>
+<regex>
+<name>get_sxstream1</name>
+<expres>src=.*[",'](.*m3u8.*?)[",']</expres>
+<page>http://www.liveonlinetv247.info/embed/foxsports2.php</page>
+<referer>http://www.liveonlinetv247.info/</referer>
+<agent></agent>
+</regex>
+<thumbnail>http://media.foxsports.com.au/digital/images/livestreams/fsnlivestream/FSN_Live_Stream_End.jpg</thumbnail>
+</item>
 
 
 
