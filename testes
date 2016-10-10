@@ -1,7 +1,33 @@
 
-<item>
+<_item>
 <title>test</title>
 <link>https://openload.co/embed/Hl94Cm8dRpg/</link>
 <_externallink></externallink>
 </item>
 
+<item>
+<title>Teste de listas</title>
+<link>$doregex[makelist2]</link>
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+ <title>[makelist2.param1]</title>
+ <link>$doregex[makelist]</link>
+ <thumbnail></thumbnail>
+ <fanart></fanart>
+ ]]></listrepeat>
+<expres>Lista:"(.*?)" URL="(.*?)"; regex"(.*?)"</expres>
+<page>http://pastebin.com/raw/tm5xQHS0</page>
+</regex>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+ <title>[makelist.param1]</title>
+ <link>plugin://plugin.video.f4mTester/?url=[makelist.param2]&amp;streamtype=TSDOWNLOADER&amp;maxbitrate=0&amp;proxy=None&amp;name=[makelist.param1]</link>
+ <thumbnail></thumbnail>
+ ]]></listrepeat>
+<expres>#EXTINF:-1,[makelist2.param3](.*?)\n(.*)</expres>
+<page>[makelist2.param2]</page>
+</regex>
+<thumbnail></thumbnail>
+</item>
