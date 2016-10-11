@@ -23,10 +23,7 @@
 <name>makelist</name>
 <listrepeat><![CDATA[
  <title>[makelist.param1]</title>
- <_link>plugin://plugin.video.f4mTester/?url=[makelist.param2]&amp;streamtype=TSDOWNLOADER&amp;maxbitrate=0&amp;proxy=None&amp;name=[makelist.param1]</link>
- 
- <link>[makelist.param2]$$TSDOWNLOADER$$&amp;name=[makelist.param1]</link>
-  
+ <link>plugin://plugin.video.f4mTester/?url=[makelist.param2]&amp;streamtype=TSDOWNLOADER&amp;maxbitrate=0&amp;proxy=None&amp;name=[makelist.param1]</link>
  <thumbnail></thumbnail>
  ]]></listrepeat>
 <expres>#EXTINF:-1,[makelist2.param3](.*?)\n(.*)</expres>
