@@ -25,3 +25,22 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <title>Filme Openload</title>
 <urlsolve>https://openload.co/embed/vxenw6YnRa8/</urlsolve>
 </item>
+
+<item>
+<title>[COLOR red]•[/COLOR][COLOR gold]  Filmes Openload - Teste [/COLOR]</title>
+<thumbnail>https://i.imgsafe.org/70b3b27c63.png</thumbnail>
+<fanart>https://i.imgsafe.org/70b260028a.jpg</fanart>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+    <title>[COLOR red]•[/COLOR][COLOR gold] [makelist.param1][/COLOR]</title>
+    <urlsolve>[makelist.param1]</urlsolve>
+]]></listrepeat>
+	<expres>#EXTINF:-1,(.*?)\n(.*)&lt;</expres>
+<page>http://pastebin.com/raw/dsbHY35L</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+</item>
+
