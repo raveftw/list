@@ -5,6 +5,8 @@
 <externallink>https://openload.co/embed/vxenw6YnRa8/</externallink>
 </item>
 
+
+
 <_item>
 <title>Openload regex</title>
 <link>$doregex[stream]</link>
@@ -21,10 +23,14 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </regex>
 </item>
 
+
+
 <item>
 <title>Filme Openload</title>
 <urlsolve>https://openload.co/embed/vxenw6YnRa8/</urlsolve>
 </item>
+
+
 
 <_item>
 <title>[COLOR red]•[/COLOR][COLOR gold]  Filmes Openload - Teste [/COLOR]</title>
@@ -44,3 +50,12 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </regex>
 </item>
 
+
+
+<item>
+<title>SPORTV 1 PT - Sportsdevil</title>
+<fanart></fanart>
+<thumbnail>https://s20.postimg.org/7i10o0o1p/sport_tv1_pt.png</thumbnail>
+<sportsdevil>http://www.liveonlinetv247.info/sporttv1.php</sportsdevil>
+<referer>http://www.liveonlinetv247.info/</referer>
+</item>
