@@ -52,45 +52,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-<item>
-<title>[COLOR red]•[/COLOR][COLOR gold]  Listas - teste[/COLOR]</title>
-<link>$doregex[makelist2]</link>
-
-<regex>
-<name>makelist2</name>
-<listrepeat><![CDATA[
- <title>[COLOR red]•[/COLOR][COLOR gold]  [makelist2.param1][/COLOR]</title>
- <link>$doregex[makelist]</link>
- <thumbnail>https://i.imgsafe.org/70b3b27c63.png</thumbnail>
- <fanart></fanart>
- ]]></listrepeat>
-<expres>Lista:"(.*?)" URL="(.*?)"; regex"(.*?)"</expres>
-<page>https://raw.githubusercontent.com/teamjmflist/list/master/listas%20team%20j2mf4</page>
-</regex>
-
-<regex>
-<name>makelist</name>
-<listrepeat><![CDATA[
- <title>[COLOR red]•[/COLOR][COLOR gold]  [makelist.param1][/COLOR]</title>
- <link>$doregex[play]</link>
- <_link>plugin://plugin.video.f4mTester/?url=[makelist.param2]&amp;streamtype=TSDOWNLOADER&amp;maxbitrate=0&amp;proxy=None&amp;name=Team j2mf4: [makelist.param1]</link>
- <thumbnail>https://i.imgsafe.org/70b3b27c63.png</thumbnail>
- ]]></listrepeat>
-<expres>#EXTINF:-1,[makelist2.param3](.*?)\n(.*)</expres>
-<page>[makelist2.param2]</page>
-</regex>
-<thumbnail>https://i.imgsafe.org/70b3b27c63.png</thumbnail>
-
-<regex>
-<name>play</name>
-<listrepeat><![CDATA[
- <expres>$pyFunction:'[makelist.param1]$$TSDOWNLOADER$$' if ".ts" in '[makelist.param1]' else  '[makelist.param1]'</expres>
- ]]></listrepeat>
-</regex>
-<thumbnail>https://i.imgsafe.org/70b3b27c63.png</thumbnail>
-
-</item>
-
 
 <item>
 <title>SPORTV 1 PT - Sportsdevil</title>
