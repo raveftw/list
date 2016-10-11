@@ -16,7 +16,7 @@
  <thumbnail></thumbnail>
  <fanart></fanart>
  ]]></listrepeat>
-<expres>Lista:"(.*?)" URL="(.*?)"; regex"(.*?)"</expres>
+<expres>Lista:"(.*?)" URL="(.*?)"</expres>
 <page>http://pastebin.com/raw/tm5xQHS0</page>
 </regex>
 <regex>
