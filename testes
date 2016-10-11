@@ -34,8 +34,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-    <title>[COLOR red]•[/COLOR][COLOR gold] [makelist.param1][/COLOR]</title>
-    <urlsolve>[makelist.param1]</urlsolve>
+    <title>[COLOR red]•[/COLOR][COLOR gold] [makelist.param2][/COLOR]</title>
+    <urlsolve>[makelist.param2]</urlsolve>
 ]]></listrepeat>
 	<expres>#EXTINF:-1,(.*?)\n(.*)&lt;</expres>
 <page>http://pastebin.com/raw/dsbHY35L</page>
