@@ -6,7 +6,7 @@
 </item>
 
 <item>
-<title>Openload</title>
+<title>Openload regex</title>
 <link>$doregex[stream]</link>
 <regex>
 <name>stream</name>
@@ -21,4 +21,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </regex>
 </item>
 
-
+<item>
+<title>Openload urlsolve</title>
+<urlsolve>https://openload.co/embed/vxenw6YnRa8/</urlsolve>
+</item>
