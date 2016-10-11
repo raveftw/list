@@ -6,49 +6,19 @@
 </item>
 
 <item>
-<title>Openload RegEx2</title>
-<link>$doregex[url]|User-Agent=iPhone</link>
+<title>Openload</title>
+<link>$doregex[stream]</link>
 <regex>
-<name>url</name>
+<name>stream</name>
 <expres><![CDATA[#$pyFunction
-import re
-from AADecoder import AADecoder
+import urlresolver
 def GetLSProData(page_data,Cookie_Jar,m):
- tt=re.findall('id=\"olvideo\".*\n.*?text/javascript\">(.*)</script>',page_data)[0]    
- aa=AADecoder(tt)
- dtext= aa.decode()
- return re.findall('vr =\"(.*?)\"',dtext)[0]    
+	url = 'https://openload.co/embed/vxenw6YnRa8/'
+	streamLink = urlresolver.resolve(url)
+	return streamLink
 ]]></expres>
-<page>https://openload.co/embed/vxenw6YnRa8</page>
-<cookieJar></cookieJar>
+<page></page>
 </regex>
-</item>
-
-<item>
-<title>Teste de listas</title>
-<link>$doregex[makelist2]</link>
-<regex>
-<name>makelist2</name>
-<listrepeat><![CDATA[
- <title>[makelist2.param1]</title>
- <link>$doregex[makelist]</link>
- <thumbnail></thumbnail>
- <fanart></fanart>
- ]]></listrepeat>
-<expres>Lista:"(.*?)" URL="(.*?)"; regex"(.*?)"</expres>
-<page>http://pastebin.com/raw/tm5xQHS0</page>
-</regex>
-<regex>
-<name>makelist</name>
-<listrepeat><![CDATA[
- <title>[makelist.param1]</title>
- <link>plugin://plugin.video.f4mTester/?url=[makelist.param2]&amp;streamtype=TSDOWNLOADER&amp;maxbitrate=0&amp;proxy=None&amp;name=[makelist.param1]</link>
- <thumbnail></thumbnail>
- ]]></listrepeat>
-<expres>#EXTINF:-1,[makelist2.param3](.*?)\n(.*)</expres>
-<page>[makelist2.param2]</page>
-</regex>
-<thumbnail></thumbnail>
 </item>
 
 
