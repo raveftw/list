@@ -84,12 +84,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>play</name>
 <listrepeat><![CDATA[
- <title>[COLOR red]•[/COLOR][COLOR gold]  [makelist.param1][/COLOR]</title>
  <expres>$pyFunction:'[makelist.param1]$$TSDOWNLOADER$$' if ".ts" in '[makelist.param1]' else  '[makelist.param1]'</expres>
- <_link>plugin://plugin.video.f4mTester/?url=[makelist.param2]&amp;streamtype=TSDOWNLOADER&amp;maxbitrate=0&amp;proxy=None&amp;name=Team j2mf4: [makelist.param1]</link>
- <thumbnail>https://i.imgsafe.org/70b3b27c63.png</thumbnail>
  ]]></listrepeat>
-<page>[makelist.param1]</page>
 </regex>
 <thumbnail>https://i.imgsafe.org/70b3b27c63.png</thumbnail>
 
