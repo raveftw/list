@@ -53,10 +53,33 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-<item>
+<_item>
 <title>SPORTV 1 PT - Sportsdevil</title>
 <fanart></fanart>
 <thumbnail>https://s20.postimg.org/7i10o0o1p/sport_tv1_pt.png</thumbnail>
 <sportsdevil>http://www.liveonlinetv247.info/sporttv1.php</sportsdevil>
 <referer>http://www.liveonlinetv247.info/</referer>
+</item>
+
+<item>
+<title>Sport TV 1 - Website streaming</title>
+<link>$doregex[getM3U8]</link>
+<regex>
+<name>getM3U8</name>
+<expres>ocation.(.*)</expres>
+<page>$doregex[getLink]</page>
+<referer>http://cxtv.biz/tvonline/canal/poker-tv.html</referer>
+<agent>Mozilla/5.0</agent>
+<noredirect>true</noredirect>
+<includeheaders/>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>getLink</name>
+<expres>src: "(.*?)"</expres>
+<page>http://cxtv.biz/tvonline/canal/poker-tv.html</page>
+<referer></referer>
+<agent>Mozilla/5.0</agent>
+<cookieJar></cookieJar>
+</regex>
 </item>
