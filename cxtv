@@ -27,6 +27,30 @@
 </item>
 
 <item>
+<title>[COLOR red]•[/COLOR][COLOR gold] Sport TV 1 - teste[/COLOR]</title>
+<link>$doregex[getM3U8]</link>
+<regex>
+<name>getM3U8</name>
+<expres>src: "(.*?)"</expres>
+<page>$doregex[getUNESCAPED_STRING]</page>
+<agent>Mozilla/5.0</agent>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>getUNESCAPED_STRING</name>
+<expres>$pyFunction:urllib.unquote('$doregex[getESCAPED_STRING]')</expres>
+<page></page>
+</regex>
+<regex>
+<name>getESCAPED_STRING</name>
+<expres>unescape\( '(.*?)'</expres>
+<page>http://cxtv.biz/tvonline/canal/poker-tv.html</page>
+<agent>Mozilla/5.0</agent>
+<cookieJar></cookieJar>
+</regex>
+</item>
+
+<item>
 <title>[COLOR red]•[/COLOR][COLOR gold] Sport TV 2 [/COLOR]</title>
 <link>$doregex[getM3U8]</link>
 <regex>
