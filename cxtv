@@ -50,6 +50,19 @@
 </item>
 
 <item>
+<title>STV 2 - test</title>
+<link>$doregex[getRtmp]</link>
+<regex>
+<name>getRtmp</name>
+<expres><![CDATA[iframe src=".*?(rtmp\:.*?)source]]></expres>
+<page>http://cxtv.biz/tvonline/canal/sporttv2.html</page>
+<referer></referer>
+<agent>Mozilla/5.0</agent>
+<cookieJar></cookieJar>
+</regex>
+</item>
+
+<item>
 <title>[COLOR red]•[/COLOR][COLOR gold] Benfica TV [/COLOR]</title>
 <link>$doregex[getM3U8]</link>
 <regex>
