@@ -1,10 +1,33 @@
-<__item>
+<item>
 <title>[COLOR red]----[/COLOR][COLOR green] É necessário carregar no "play" após aparecer imagem [/COLOR][COLOR red]----[/COLOR]</title>
 <link>_</link>
 </item>
 
 <item>
 <title>[COLOR red]•[/COLOR][COLOR gold] Sport TV 1 [/COLOR]</title>
+<link>$doregex[getM3U8]</link>
+<regex>
+<name>getM3U8</name>
+<expres>ocation.(.*)</expres>
+<page>$doregex[getLink]</page>
+<referer>http://cxtv.biz/tvonline/canal/poker-tv.html</referer>
+<agent>Mozilla/5.0</agent>
+<noredirect>true</noredirect>
+<includeheaders/>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>getLink</name>
+<expres>src: "(.*?)"</expres>
+<page>http://cxtv.biz/tvonline/canal/poker-tv.html</page>
+<referer></referer>
+<agent>Mozilla/5.0</agent>
+<cookieJar></cookieJar>
+</regex>
+</item>
+
+<item>
+<title>[COLOR red]•[/COLOR][COLOR gold] Sport TV 1 - teste[/COLOR]</title>
 <link>$doregex[getM3U8]</link>
 <regex>
 <name>getM3U8</name>
@@ -32,20 +55,32 @@
 <link>$doregex[getM3U8]</link>
 <regex>
 <name>getM3U8</name>
-<expres>src: "(.*?)"</expres>
-<page>$doregex[getUNESCAPED_STRING]</page>
+<expres>ocation.(.*)</expres>
+<page>$doregex[getLink]</page>
+<referer>http://cxtv.biz/tvonline/canal/sporttv2.html</referer>
 <agent>Mozilla/5.0</agent>
+<noredirect>true</noredirect>
+<includeheaders/>
 <cookieJar></cookieJar>
 </regex>
 <regex>
-<name>getUNESCAPED_STRING</name>
-<expres>$pyFunction:urllib.unquote('$doregex[getESCAPED_STRING]')</expres>
-<page></page>
-</regex>
-<regex>
-<name>getESCAPED_STRING</name>
-<expres>unescape\( '(.*?)'</expres>
+<name>getLink</name>
+<expres>src: "(.*?)"</expres>
 <page>http://cxtv.biz/tvonline/canal/sporttv2.html</page>
+<referer></referer>
+<agent>Mozilla/5.0</agent>
+<cookieJar></cookieJar>
+</regex>
+</item>
+
+<-----------------item>
+<title>STV 2 - test</title>
+<link>$doregex[getRtmp]</link>
+<regex>
+<name>getRtmp</name>
+<expres><![CDATA[iframe src=".*?(rtmp\:.*?)source]]></expres>
+<page>http://cxtv.biz/tvonline/canal/sporttv2.html</page>
+<referer></referer>
 <agent>Mozilla/5.0</agent>
 <cookieJar></cookieJar>
 </regex>
@@ -56,20 +91,19 @@
 <link>$doregex[getM3U8]</link>
 <regex>
 <name>getM3U8</name>
-<expres>src: "(.*?)"</expres>
-<page>$doregex[getUNESCAPED_STRING]</page>
+<expres>ocation.(.*)</expres>
+<page>$doregex[getLink]</page>
+<referer>http://cxtv.biz/tvonline/canal/btv1hd.html</referer>
 <agent>Mozilla/5.0</agent>
+<noredirect>true</noredirect>
+<includeheaders/>
 <cookieJar></cookieJar>
 </regex>
 <regex>
-<name>getUNESCAPED_STRING</name>
-<expres>$pyFunction:urllib.unquote('$doregex[getESCAPED_STRING]')</expres>
-<page></page>
-</regex>
-<regex>
-<name>getESCAPED_STRING</name>
-<expres>unescape\( '(.*?)'</expres>
+<name>getLink</name>
+<expres>src: "(.*?)"</expres>
 <page>http://cxtv.biz/tvonline/canal/btv1hd.html</page>
+<referer></referer>
 <agent>Mozilla/5.0</agent>
 <cookieJar></cookieJar>
 </regex>
@@ -80,20 +114,19 @@
 <link>$doregex[getM3U8]</link>
 <regex>
 <name>getM3U8</name>
-<expres>src: "(.*?)"</expres>
-<page>$doregex[getUNESCAPED_STRING]</page>
+<expres>ocation.(.*)</expres>
+<page>$doregex[getLink]</page>
+<referer>http://cxtv.biz/tvonline/canal/tvc1hd.html</referer>
 <agent>Mozilla/5.0</agent>
+<noredirect>true</noredirect>
+<includeheaders/>
 <cookieJar></cookieJar>
 </regex>
 <regex>
-<name>getUNESCAPED_STRING</name>
-<expres>$pyFunction:urllib.unquote('$doregex[getESCAPED_STRING]')</expres>
-<page></page>
-</regex>
-<regex>
-<name>getESCAPED_STRING</name>
-<expres>unescape\( '(.*?)'</expres>
+<name>getLink</name>
+<expres>src: "(.*?)"</expres>
 <page>http://cxtv.biz/tvonline/canal/tvc1hd.html</page>
+<referer></referer>
 <agent>Mozilla/5.0</agent>
 <cookieJar></cookieJar>
 </regex>
@@ -104,20 +137,19 @@
 <link>$doregex[getM3U8]</link>
 <regex>
 <name>getM3U8</name>
-<expres>src: "(.*?)"</expres>
-<page>$doregex[getUNESCAPED_STRING]</page>
+<expres>ocation.(.*)</expres>
+<page>$doregex[getLink]</page>
+<referer>http://cxtv.biz/tvonline/canal/tvc4.html</referer>
 <agent>Mozilla/5.0</agent>
+<noredirect>true</noredirect>
+<includeheaders/>
 <cookieJar></cookieJar>
 </regex>
 <regex>
-<name>getUNESCAPED_STRING</name>
-<expres>$pyFunction:urllib.unquote('$doregex[getESCAPED_STRING]')</expres>
-<page></page>
-</regex>
-<regex>
-<name>getESCAPED_STRING</name>
-<expres>unescape\( '(.*?)'</expres>
+<name>getLink</name>
+<expres>src: "(.*?)"</expres>
 <page>http://cxtv.biz/tvonline/canal/tvc4.html</page>
+<referer></referer>
 <agent>Mozilla/5.0</agent>
 <cookieJar></cookieJar>
 </regex>
@@ -128,20 +160,19 @@
 <link>$doregex[getM3U8]</link>
 <regex>
 <name>getM3U8</name>
-<expres>src: "(.*?)"</expres>
-<page>$doregex[getUNESCAPED_STRING]</page>
+<expres>ocation.(.*)</expres>
+<page>$doregex[getLink]</page>
+<referer>http://cxtv.biz/tvonline/canal/Rtp1.html</referer>
 <agent>Mozilla/5.0</agent>
+<noredirect>true</noredirect>
+<includeheaders/>
 <cookieJar></cookieJar>
 </regex>
 <regex>
-<name>getUNESCAPED_STRING</name>
-<expres>$pyFunction:urllib.unquote('$doregex[getESCAPED_STRING]')</expres>
-<page></page>
-</regex>
-<regex>
-<name>getESCAPED_STRING</name>
-<expres>unescape\( '(.*?)'</expres>
+<name>getLink</name>
+<expres>src: "(.*?)"</expres>
 <page>http://cxtv.biz/tvonline/canal/Rtp1.html</page>
+<referer></referer>
 <agent>Mozilla/5.0</agent>
 <cookieJar></cookieJar>
 </regex>
@@ -152,20 +183,19 @@
 <link>$doregex[getM3U8]</link>
 <regex>
 <name>getM3U8</name>
-<expres>src: "(.*?)"</expres>
-<page>$doregex[getUNESCAPED_STRING]</page>
+<expres>ocation.(.*)</expres>
+<page>$doregex[getLink]</page>
+<referer>http://cxtv.biz/tvonline/canal/RTP-2.html</referer>
 <agent>Mozilla/5.0</agent>
+<noredirect>true</noredirect>
+<includeheaders/>
 <cookieJar></cookieJar>
 </regex>
 <regex>
-<name>getUNESCAPED_STRING</name>
-<expres>$pyFunction:urllib.unquote('$doregex[getESCAPED_STRING]')</expres>
-<page></page>
-</regex>
-<regex>
-<name>getESCAPED_STRING</name>
-<expres>unescape\( '(.*?)'</expres>
+<name>getLink</name>
+<expres>src: "(.*?)"</expres>
 <page>http://cxtv.biz/tvonline/canal/RTP-2.html</page>
+<referer></referer>
 <agent>Mozilla/5.0</agent>
 <cookieJar></cookieJar>
 </regex>
@@ -176,20 +206,19 @@
 <link>$doregex[getM3U8]</link>
 <regex>
 <name>getM3U8</name>
-<expres>src: "(.*?)"</expres>
-<page>$doregex[getUNESCAPED_STRING]</page>
+<expres>ocation.(.*)</expres>
+<page>$doregex[getLink]</page>
+<referer>http://cxtv.biz/tvonline/canal/Sic.html</referer>
 <agent>Mozilla/5.0</agent>
+<noredirect>true</noredirect>
+<includeheaders/>
 <cookieJar></cookieJar>
 </regex>
 <regex>
-<name>getUNESCAPED_STRING</name>
-<expres>$pyFunction:urllib.unquote('$doregex[getESCAPED_STRING]')</expres>
-<page></page>
-</regex>
-<regex>
-<name>getESCAPED_STRING</name>
-<expres>unescape\( '(.*?)'</expres>
+<name>getLink</name>
+<expres>src: "(.*?)"</expres>
 <page>http://cxtv.biz/tvonline/canal/Sic.html</page>
+<referer></referer>
 <agent>Mozilla/5.0</agent>
 <cookieJar></cookieJar>
 </regex>
@@ -200,20 +229,19 @@
 <link>$doregex[getM3U8]</link>
 <regex>
 <name>getM3U8</name>
-<expres>src: "(.*?)"</expres>
-<page>$doregex[getUNESCAPED_STRING]</page>
+<expres>ocation.(.*)</expres>
+<page>$doregex[getLink]</page>
+<referer>http://cxtv.biz/tvonline/canal/tvi-2.html</referer>
 <agent>Mozilla/5.0</agent>
+<noredirect>true</noredirect>
+<includeheaders/>
 <cookieJar></cookieJar>
 </regex>
 <regex>
-<name>getUNESCAPED_STRING</name>
-<expres>$pyFunction:urllib.unquote('$doregex[getESCAPED_STRING]')</expres>
-<page></page>
-</regex>
-<regex>
-<name>getESCAPED_STRING</name>
-<expres>unescape\( '(.*?)'</expres>
+<name>getLink</name>
+<expres>src: "(.*?)"</expres>
 <page>http://cxtv.biz/tvonline/canal/tvi-2.html</page>
+<referer></referer>
 <agent>Mozilla/5.0</agent>
 <cookieJar></cookieJar>
 </regex>
@@ -224,20 +252,19 @@
 <link>$doregex[getM3U8]</link>
 <regex>
 <name>getM3U8</name>
-<expres>src: "(.*?)"</expres>
-<page>$doregex[getUNESCAPED_STRING]</page>
+<expres>ocation.(.*)</expres>
+<page>$doregex[getLink]</page>
+<referer>http://cxtv.biz/tvonline/canal/tvireality.html</referer>
 <agent>Mozilla/5.0</agent>
+<noredirect>true</noredirect>
+<includeheaders/>
 <cookieJar></cookieJar>
 </regex>
 <regex>
-<name>getUNESCAPED_STRING</name>
-<expres>$pyFunction:urllib.unquote('$doregex[getESCAPED_STRING]')</expres>
-<page></page>
-</regex>
-<regex>
-<name>getESCAPED_STRING</name>
-<expres>unescape\( '(.*?)'</expres>
+<name>getLink</name>
+<expres>src: "(.*?)"</expres>
 <page>http://cxtv.biz/tvonline/canal/tvireality.html</page>
+<referer></referer>
 <agent>Mozilla/5.0</agent>
 <cookieJar></cookieJar>
 </regex>
@@ -248,20 +275,19 @@
 <link>$doregex[getM3U8]</link>
 <regex>
 <name>getM3U8</name>
-<expres>src: "(.*?)"</expres>
-<page>$doregex[getUNESCAPED_STRING]</page>
+<expres>ocation.(.*)</expres>
+<page>$doregex[getLink]</page>
+<referer>http://cxtv.biz/tvonline/canal/cmtv.html</referer>
 <agent>Mozilla/5.0</agent>
+<noredirect>true</noredirect>
+<includeheaders/>
 <cookieJar></cookieJar>
 </regex>
 <regex>
-<name>getUNESCAPED_STRING</name>
-<expres>$pyFunction:urllib.unquote('$doregex[getESCAPED_STRING]')</expres>
-<page></page>
-</regex>
-<regex>
-<name>getESCAPED_STRING</name>
-<expres>unescape\( '(.*?)'</expres>
+<name>getLink</name>
+<expres>src: "(.*?)"</expres>
 <page>http://cxtv.biz/tvonline/canal/cmtv.html</page>
+<referer></referer>
 <agent>Mozilla/5.0</agent>
 <cookieJar></cookieJar>
 </regex>
@@ -272,20 +298,19 @@
 <link>$doregex[getM3U8]</link>
 <regex>
 <name>getM3U8</name>
-<expres>src: "(.*?)"</expres>
-<page>$doregex[getUNESCAPED_STRING]</page>
+<expres>ocation.(.*)</expres>
+<page>$doregex[getLink]</page>
+<referer>http://cxtv.biz/tvonline/canal/panda.html</referer>
 <agent>Mozilla/5.0</agent>
+<noredirect>true</noredirect>
+<includeheaders/>
 <cookieJar></cookieJar>
 </regex>
 <regex>
-<name>getUNESCAPED_STRING</name>
-<expres>$pyFunction:urllib.unquote('$doregex[getESCAPED_STRING]')</expres>
-<page></page>
-</regex>
-<regex>
-<name>getESCAPED_STRING</name>
-<expres>unescape\( '(.*?)'</expres>
+<name>getLink</name>
+<expres>src: "(.*?)"</expres>
 <page>http://cxtv.biz/tvonline/canal/panda.html</page>
+<referer></referer>
 <agent>Mozilla/5.0</agent>
 <cookieJar></cookieJar>
 </regex>
@@ -296,20 +321,19 @@
 <link>$doregex[getM3U8]</link>
 <regex>
 <name>getM3U8</name>
-<expres>src: "(.*?)"</expres>
-<page>$doregex[getUNESCAPED_STRING]</page>
+<expres>ocation.(.*)</expres>
+<page>$doregex[getLink]</page>
+<referer>http://cxtv.biz/tvonline/canal/axnhd.html</referer>
 <agent>Mozilla/5.0</agent>
+<noredirect>true</noredirect>
+<includeheaders/>
 <cookieJar></cookieJar>
 </regex>
 <regex>
-<name>getUNESCAPED_STRING</name>
-<expres>$pyFunction:urllib.unquote('$doregex[getESCAPED_STRING]')</expres>
-<page></page>
-</regex>
-<regex>
-<name>getESCAPED_STRING</name>
-<expres>unescape\( '(.*?)'</expres>
+<name>getLink</name>
+<expres>src: "(.*?)"</expres>
 <page>http://cxtv.biz/tvonline/canal/axnhd.html</page>
+<referer></referer>
 <agent>Mozilla/5.0</agent>
 <cookieJar></cookieJar>
 </regex>
@@ -320,20 +344,19 @@
 <link>$doregex[getM3U8]</link>
 <regex>
 <name>getM3U8</name>
-<expres>src: "(.*?)"</expres>
-<page>$doregex[getUNESCAPED_STRING]</page>
+<expres>ocation.(.*)</expres>
+<page>$doregex[getLink]</page>
+<referer>http://cxtv.biz/tvonline/canal/foxhd.html</referer>
 <agent>Mozilla/5.0</agent>
+<noredirect>true</noredirect>
+<includeheaders/>
 <cookieJar></cookieJar>
 </regex>
 <regex>
-<name>getUNESCAPED_STRING</name>
-<expres>$pyFunction:urllib.unquote('$doregex[getESCAPED_STRING]')</expres>
-<page></page>
-</regex>
-<regex>
-<name>getESCAPED_STRING</name>
-<expres>unescape\( '(.*?)'</expres>
+<name>getLink</name>
+<expres>src: "(.*?)"</expres>
 <page>http://cxtv.biz/tvonline/canal/foxhd.html</page>
+<referer></referer>
 <agent>Mozilla/5.0</agent>
 <cookieJar></cookieJar>
 </regex>
@@ -344,20 +367,19 @@
 <link>$doregex[getM3U8]</link>
 <regex>
 <name>getM3U8</name>
-<expres>src: "(.*?)"</expres>
-<page>$doregex[getUNESCAPED_STRING]</page>
+<expres>ocation.(.*)</expres>
+<page>$doregex[getLink]</page>
+<referer>http://cxtv.biz/tvonline/canal/foxcrimehd.html</referer>
 <agent>Mozilla/5.0</agent>
+<noredirect>true</noredirect>
+<includeheaders/>
 <cookieJar></cookieJar>
 </regex>
 <regex>
-<name>getUNESCAPED_STRING</name>
-<expres>$pyFunction:urllib.unquote('$doregex[getESCAPED_STRING]')</expres>
-<page></page>
-</regex>
-<regex>
-<name>getESCAPED_STRING</name>
-<expres>unescape\( '(.*?)'</expres>
+<name>getLink</name>
+<expres>src: "(.*?)"</expres>
 <page>http://cxtv.biz/tvonline/canal/foxcrimehd.html</page>
+<referer></referer>
 <agent>Mozilla/5.0</agent>
 <cookieJar></cookieJar>
 </regex>
@@ -368,20 +390,19 @@
 <link>$doregex[getM3U8]</link>
 <regex>
 <name>getM3U8</name>
-<expres>src: "(.*?)"</expres>
-<page>$doregex[getUNESCAPED_STRING]</page>
+<expres>ocation.(.*)</expres>
+<page>$doregex[getLink]</page>
+<referer>http://cxtv.biz/tvonline/canal/syfy.html</referer>
 <agent>Mozilla/5.0</agent>
+<noredirect>true</noredirect>
+<includeheaders/>
 <cookieJar></cookieJar>
 </regex>
 <regex>
-<name>getUNESCAPED_STRING</name>
-<expres>$pyFunction:urllib.unquote('$doregex[getESCAPED_STRING]')</expres>
-<page></page>
-</regex>
-<regex>
-<name>getESCAPED_STRING</name>
-<expres>unescape\( '(.*?)'</expres>
+<name>getLink</name>
+<expres>src: "(.*?)"</expres>
 <page>http://cxtv.biz/tvonline/canal/syfy.html</page>
+<referer></referer>
 <agent>Mozilla/5.0</agent>
 <cookieJar></cookieJar>
 </regex>
@@ -392,20 +413,19 @@
 <link>$doregex[getM3U8]</link>
 <regex>
 <name>getM3U8</name>
-<expres>src: "(.*?)"</expres>
-<page>$doregex[getUNESCAPED_STRING]</page>
+<expres>ocation.(.*)</expres>
+<page>$doregex[getLink]</page>
+<referer>http://cxtv.biz/tvonline/canal/odisseia.html</referer>
 <agent>Mozilla/5.0</agent>
+<noredirect>true</noredirect>
+<includeheaders/>
 <cookieJar></cookieJar>
 </regex>
 <regex>
-<name>getUNESCAPED_STRING</name>
-<expres>$pyFunction:urllib.unquote('$doregex[getESCAPED_STRING]')</expres>
-<page></page>
-</regex>
-<regex>
-<name>getESCAPED_STRING</name>
-<expres>unescape\( '(.*?)'</expres>
+<name>getLink</name>
+<expres>src: "(.*?)"</expres>
 <page>http://cxtv.biz/tvonline/canal/odisseia.html</page>
+<referer></referer>
 <agent>Mozilla/5.0</agent>
 <cookieJar></cookieJar>
 </regex>
@@ -416,20 +436,19 @@
 <link>$doregex[getM3U8]</link>
 <regex>
 <name>getM3U8</name>
-<expres>src: "(.*?)"</expres>
-<page>$doregex[getUNESCAPED_STRING]</page>
+<expres>ocation.(.*)</expres>
+<page>$doregex[getLink]</page>
+<referer>http://cxtv.biz/tvonline/canal/tlc.html</referer>
 <agent>Mozilla/5.0</agent>
+<noredirect>true</noredirect>
+<includeheaders/>
 <cookieJar></cookieJar>
 </regex>
 <regex>
-<name>getUNESCAPED_STRING</name>
-<expres>$pyFunction:urllib.unquote('$doregex[getESCAPED_STRING]')</expres>
-<page></page>
-</regex>
-<regex>
-<name>getESCAPED_STRING</name>
-<expres>unescape\( '(.*?)'</expres>
+<name>getLink</name>
+<expres>src: "(.*?)"</expres>
 <page>http://cxtv.biz/tvonline/canal/tlc.html</page>
+<referer></referer>
 <agent>Mozilla/5.0</agent>
 <cookieJar></cookieJar>
 </regex>
@@ -440,20 +459,19 @@
 <link>$doregex[getM3U8]</link>
 <regex>
 <name>getM3U8</name>
-<expres>src: "(.*?)"</expres>
-<page>$doregex[getUNESCAPED_STRING]</page>
+<expres>ocation.(.*)</expres>
+<page>$doregex[getLink]</page>
+<referer>http://cxtv.biz/tvonline/canal/cbsreality.html</referer>
 <agent>Mozilla/5.0</agent>
+<noredirect>true</noredirect>
+<includeheaders/>
 <cookieJar></cookieJar>
 </regex>
 <regex>
-<name>getUNESCAPED_STRING</name>
-<expres>$pyFunction:urllib.unquote('$doregex[getESCAPED_STRING]')</expres>
-<page></page>
-</regex>
-<regex>
-<name>getESCAPED_STRING</name>
-<expres>unescape\( '(.*?)'</expres>
+<name>getLink</name>
+<expres>src: "(.*?)"</expres>
 <page>http://cxtv.biz/tvonline/canal/cbsreality.html</page>
+<referer></referer>
 <agent>Mozilla/5.0</agent>
 <cookieJar></cookieJar>
 </regex>
@@ -464,20 +482,19 @@
 <link>$doregex[getM3U8]</link>
 <regex>
 <name>getM3U8</name>
-<expres>src: "(.*?)"</expres>
-<page>$doregex[getUNESCAPED_STRING]</page>
+<expres>ocation.(.*)</expres>
+<page>$doregex[getLink]</page>
+<referer>http://cxtv.biz/tvonline/canal/natgeowild.html</referer>
 <agent>Mozilla/5.0</agent>
+<noredirect>true</noredirect>
+<includeheaders/>
 <cookieJar></cookieJar>
 </regex>
 <regex>
-<name>getUNESCAPED_STRING</name>
-<expres>$pyFunction:urllib.unquote('$doregex[getESCAPED_STRING]')</expres>
-<page></page>
-</regex>
-<regex>
-<name>getESCAPED_STRING</name>
-<expres>unescape\( '(.*?)'</expres>
+<name>getLink</name>
+<expres>src: "(.*?)"</expres>
 <page>http://cxtv.biz/tvonline/canal/natgeowild.html</page>
+<referer></referer>
 <agent>Mozilla/5.0</agent>
 <cookieJar></cookieJar>
 </regex>
@@ -488,20 +505,19 @@
 <link>$doregex[getM3U8]</link>
 <regex>
 <name>getM3U8</name>
-<expres>src: "(.*?)"</expres>
-<page>$doregex[getUNESCAPED_STRING]</page>
+<expres>ocation.(.*)</expres>
+<page>$doregex[getLink]</page>
+<referer>http://cxtv.biz/tvonline/canal/historia.html</referer>
 <agent>Mozilla/5.0</agent>
+<noredirect>true</noredirect>
+<includeheaders/>
 <cookieJar></cookieJar>
 </regex>
 <regex>
-<name>getUNESCAPED_STRING</name>
-<expres>$pyFunction:urllib.unquote('$doregex[getESCAPED_STRING]')</expres>
-<page></page>
-</regex>
-<regex>
-<name>getESCAPED_STRING</name>
-<expres>unescape\( '(.*?)'</expres>
+<name>getLink</name>
+<expres>src: "(.*?)"</expres>
 <page>http://cxtv.biz/tvonline/canal/historia.html</page>
+<referer></referer>
 <agent>Mozilla/5.0</agent>
 <cookieJar></cookieJar>
 </regex>
@@ -512,20 +528,19 @@
 <link>$doregex[getM3U8]</link>
 <regex>
 <name>getM3U8</name>
-<expres>src: "(.*?)"</expres>
-<page>$doregex[getUNESCAPED_STRING]</page>
+<expres>ocation.(.*)</expres>
+<page>$doregex[getLink]</page>
+<referer>http://cxtv.biz/tvonline/canal/tvrecorde.html</referer>
 <agent>Mozilla/5.0</agent>
+<noredirect>true</noredirect>
+<includeheaders/>
 <cookieJar></cookieJar>
 </regex>
 <regex>
-<name>getUNESCAPED_STRING</name>
-<expres>$pyFunction:urllib.unquote('$doregex[getESCAPED_STRING]')</expres>
-<page></page>
-</regex>
-<regex>
-<name>getESCAPED_STRING</name>
-<expres>unescape\( '(.*?)'</expres>
+<name>getLink</name>
+<expres>src: "(.*?)"</expres>
 <page>http://cxtv.biz/tvonline/canal/tvrecorde.html</page>
+<referer></referer>
 <agent>Mozilla/5.0</agent>
 <cookieJar></cookieJar>
 </regex>
@@ -536,20 +551,19 @@
 <link>$doregex[getM3U8]</link>
 <regex>
 <name>getM3U8</name>
-<expres>src: "(.*?)"</expres>
-<page>$doregex[getUNESCAPED_STRING]</page>
+<expres>ocation.(.*)</expres>
+<page>$doregex[getLink]</page>
+<referer>http://cxtv.biz/tvonline/canal/afromusic.html</referer>
 <agent>Mozilla/5.0</agent>
+<noredirect>true</noredirect>
+<includeheaders/>
 <cookieJar></cookieJar>
 </regex>
 <regex>
-<name>getUNESCAPED_STRING</name>
-<expres>$pyFunction:urllib.unquote('$doregex[getESCAPED_STRING]')</expres>
-<page></page>
-</regex>
-<regex>
-<name>getESCAPED_STRING</name>
-<expres>unescape\( '(.*?)'</expres>
+<name>getLink</name>
+<expres>src: "(.*?)"</expres>
 <page>http://cxtv.biz/tvonline/canal/afromusic.html</page>
+<referer></referer>
 <agent>Mozilla/5.0</agent>
 <cookieJar></cookieJar>
 </regex>
