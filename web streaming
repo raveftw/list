@@ -16,6 +16,7 @@
 <item>
 <title>[COLOR red]•[/COLOR][COLOR gold]  Canais urhd.tv [/COLOR]</title>
 <link>$doregex[makelist]</link>
+<thumbnail>https://i.imgsafe.org/70b3b27c63.png</thumbnail>
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
