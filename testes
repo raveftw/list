@@ -86,20 +86,22 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <item>
-<title>http://urhd.tv/</title>
+<title>http://urhd.tv/ - test</title>
 <link>$doregex[makelist]</link>
+
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-    <title>[makelist.param1]  [makelist.param2]</title>
+    <title>[COLOR skyblue][makelist.param1][/COLOR] [makelist.param2]</title>
     <link>$doregex[get_m3u8]</link>
     ]]></listrepeat>
 <expres>quot;alive&amp;quot;:(.*?),&amp;quot;display_name&amp;quot;:&amp;quot;(.*?)&amp;quot;,&amp;quot;picture&amp;quot;:&amp;quot;(.*?)&amp;quot;,&amp;quot;slug&amp;quot;:&amp;quot;\\(.*?)&amp;quot;}</expres>
-<page>$doregex[get-source]</page>
+<page>http://urhd.tv/</page>
 <referer></referer>
 <agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
 <cookieJar></cookieJar>
 </regex>
+
 <regex>
 <name>get_m3u8</name>
 <expres>file: '(.*?)',</expres>    
@@ -107,18 +109,5 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
 <referer>http://urhd.tv/</referer>
 </regex>
-<regex>
-<name>get-source</name>
-<expres><![CDATA[#$pyFunction
-def GetLSProData(page_data, Cookie_Jar, m, offon= '[makelist.param1]', title= '[makelist.param2]'):
-  import requests
- import re
- url = 'http://urhd.tv/'
- headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Referer' : ''}
- r1 = requests.get(url, headers=headers)
- source= r1.text.replace('false', '[COLOR red]offline[/COLOR]').replace('true', '[COLOR green]online[/COLOR]')
- return source
-]]></expres>
-<page></page>
-</regex>
+
 </item>
