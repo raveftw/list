@@ -1,1 +1,38 @@
+<item>
+	<title>[COLOR red]•[/COLOR][COLOR gold]  Canais PT [/COLOR]</title>
+	<link>_</link>
+	<externallink>https://raw.githubusercontent.com/teamjmflist/list/master/cxtv</externallink>
+	<thumbnail>https://i.imgsafe.org/70b3b27c63.png</thumbnail>
+</item>
 
+<item>
+	<title>[COLOR red]•[/COLOR][COLOR gold]  Canais liveonlinetv247.info [/COLOR]</title>
+	<link>_</link>
+	<externallink>https://raw.githubusercontent.com/teamjmflist/list/master/liveonlinetv247.info</externallink>
+	<thumbnail>https://i.imgsafe.org/70b3b27c63.png</thumbnail>
+</item>
+
+
+<item>
+<title>[COLOR red]•[/COLOR][COLOR gold]  Canais urhd.tv [/COLOR]</title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+    <title>[COLOR green]([makelist.param1])[/COLOR] [COLOR red]•[/COLOR][COLOR gold]  [makelist.param2][/COLOR]</title>
+    <link>$doregex[get_m3u8]</link>
+    ]]></listrepeat>
+<expres>quot;alive&amp;quot;:(.*?),&amp;quot;display_name&amp;quot;:&amp;quot;(.*?)&amp;quot;,&amp;quot;picture&amp;quot;:&amp;quot;(.*?)&amp;quot;,&amp;quot;slug&amp;quot;:&amp;quot;\\(.*?)&amp;quot;}</expres>
+<page>http://urhd.tv/</page>
+<referer></referer>
+<agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>get_m3u8</name>
+<expres>file: '(.*?)',</expres>    
+<page>http://urhd.tv/[makelist.param4]</page>
+<agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
+<referer>http://urhd.tv/</referer>
+</regex>
+</item>
