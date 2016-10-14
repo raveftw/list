@@ -49,7 +49,7 @@
 </regex>
 </item>
 
-<item>
+<-----------------item>
 <title>STV 2 - test</title>
 <link>$doregex[getRtmp]</link>
 <regex>
