@@ -25,7 +25,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-<item>
+<_item>
 <title>Filme Openload</title>
 <urlsolve>https://openload.co/embed/vxenw6YnRa8/</urlsolve>
 </item>
@@ -61,7 +61,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <referer>http://www.liveonlinetv247.info/</referer>
 </item>
 
-<item>
+<_item>
 <title>Sport TV 1 - Website streaming</title>
 <link>$doregex[getM3U8]</link>
 <regex>
@@ -85,7 +85,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </item>
 
 
-<item>
+<_item>
 <title>http://urhd.tv/ - test</title>
 <link>$doregex[makelist]</link>
 <regex>
@@ -111,7 +111,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-<item>
+<_item>
 <title>Teste de listas</title>
 <link>$doregex[makelist2]</link>
 <regex>
