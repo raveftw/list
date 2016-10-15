@@ -88,7 +88,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <item>
 <title>http://urhd.tv/ - test</title>
 <link>$doregex[makelist]</link>
-
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
@@ -101,7 +100,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
 <cookieJar></cookieJar>
 </regex>
-
 <regex>
 <name>get_m3u8</name>
 <expres>file: '(.*?)',</expres>    
@@ -109,5 +107,47 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
 <referer>http://urhd.tv/</referer>
 </regex>
+</item>
 
+
+
+<item>
+<title>Teste de listas</title>
+<link>$doregex[makelist2]</link>
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+ <title>[makelist2.param1]</title>
+ <link>$doregex[makelist]</link>
+ <thumbnail></thumbnail>
+ <fanart></fanart>
+ ]]></listrepeat>
+<expres>Lista:"(.*?)" URL="(.*?)"</expres>
+<page>http://pastebin.com/raw/tm5xQHS0</page>
+</regex>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+ <title>[makelist.param1]</title>
+ <link>$doregex[url]<link>
+ <thumbnail></thumbnail>
+ ]]></listrepeat>
+<expres>EXTINF:-1,(.*)\n(.*[ts|mkv|mp4|m3u8])</expres>
+<page>[makelist2.param2]</page>
+</regex>
+<regex>
+<name>url</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    url = '[makelist.param2]'
+    u = url
+    if '.ts' in url:
+        u = 'plugin://plugin.video.f4mTester/?url=%s&streamtype=TSDOWNLOADER'%url
+    elif '.m3u8' in url:
+        u = 'plugin://plugin.video.f4mTester/?url=%s&streamtype=HLS'%url
+    return u
+]]></expres>
+<page></page>
+</regex>
+<thumbnail></thumbnail>
 </item>
