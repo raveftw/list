@@ -42,6 +42,7 @@
 <item>
 <title>[COLOR red]•[/COLOR][COLOR gold]  Canais live-sports-stream.net [/COLOR]</title>
 <link>$doregex[makelist]</link>
+<thumbnail>https://i.imgsafe.org/70b3b27c63.png</thumbnail>
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
@@ -76,5 +77,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page>http://live-sports-stream.net/[makelist.param1]</page>
 <agent>Mozilla/5.0 (X11; Linux i686; rv:45.0) Gecko/20100101 Firefox/45.0</agent>
 <referer></referer>
+<thumbnail>https://i.imgsafe.org/70b3b27c63.png</thumbnail>
 </regex>
 </item>
