@@ -3,6 +3,24 @@
 <link>_</link>
 </item>
 
+<_item>
+<title>[COLOR red]•[/COLOR][COLOR gold] Sport TV 1 - v2[/COLOR]</title>
+<link>$doregex[getUrl]</link>
+<regex>
+<name>getUrl</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data, Cookie_Jar, m):
+ import requests, re, urllib
+ unescape= re.findall("unescape.+'(.*?)'", page_data)[0]
+ getm3u8 = urllib.unquote(unescape)
+ return re.findall('"(http.*m3u8)"', getm3u8)[0]
+]]></expres>
+<page>http://cxtv.biz/tvonline/canal/poker-tv.html</page>
+<agent>Mozilla/5.0 (Windows NT 6.3; rv:36.0) Gecko/20100101 Firefox/36.04</agent>
+<cookieJar></cookieJar>
+</regex>
+</item>
+
 <item>
 <title>[COLOR red]•[/COLOR][COLOR gold] Sport TV 1 [/COLOR]</title>
 <link>$doregex[getM3U8]</link>
@@ -23,24 +41,6 @@
 <expres>unescape\( '(.*?)'</expres>
 <page>http://cxtv.biz/tvonline/canal/poker-tv.html</page>
 <agent>Mozilla/5.0</agent>
-<cookieJar></cookieJar>
-</regex>
-</item>
-
-<item>
-<title>[COLOR red]•[/COLOR][COLOR gold] Sport TV 1 - v2[/COLOR]</title>
-<link>$doregex[getUrl]</link>
-<regex>
-<name>getUrl</name>
-<expres><![CDATA[#$pyFunction
-def GetLSProData(page_data, Cookie_Jar, m):
- import requests, re, urllib
- unescape= re.findall("unescape.+'(.*?)'", page_data)[0]
- getm3u8 = urllib.unquote(unescape)
- return re.findall('"(http.*m3u8)"', getm3u8)[0]
-]]></expres>
-<page>http://cxtv.biz/tvonline/canal/poker-tv.html</page>
-<agent>Mozilla/5.0 (Windows NT 6.3; rv:36.0) Gecko/20100101 Firefox/36.04</agent>
 <cookieJar></cookieJar>
 </regex>
 </item>
