@@ -9,10 +9,9 @@
 	<fanart>https://i.imgsafe.org/70b260028a.jpg</fanart>
 </item>
 
-<_item>
-
 FALTA O NOME NO LINK F4M [makelist.param2] TALVEZ (.*?)
 
+<item>
 <title>[COLOR red]•[/COLOR][COLOR gold]  Listas Team j2mf4[/COLOR] --- [COLOR green]TESTE 7[/COLOR]</title>
 <link>$doregex[makelist2]</link>
 <regex>
@@ -34,7 +33,7 @@ FALTA O NOME NO LINK F4M [makelist.param2] TALVEZ (.*?)
  <thumbnail>https://i.imgsafe.org/70b3b27c63.png</thumbnail>
  <fanart>https://i.imgsafe.org/70b260028a.jpg</fanart>
  ]]></listrepeat>
-<expres>EXTINF:(.*),(.*)\n(.*[ts|mkv|mp4|m3u8])</expres>
+<expres>EXTINF:(.*),(.*?)\n(.*[ts|mkv|mp4|m3u8])</expres>
 <page>[makelist2.param2]</page>
 </regex>
 <regex>
@@ -44,9 +43,9 @@ def GetLSProData(page_data,Cookie_Jar,m):
     url = '[makelist.param3]'
     u = url
     if '.ts' in url:
-        u = 'plugin://plugin.video.f4mTester/?url=%s&streamtype=TSDOWNLOADER&name=Team j2mf4: '%url
+        u = 'plugin://plugin.video.f4mTester/?url=%s&streamtype=TSDOWNLOADER&name=[makelist.param2]'%url
     elif '.m3u8' in url:
-        u = 'plugin://plugin.video.f4mTester/?url=%s&streamtype=HLS&name=Team j2mf4: '%url
+        u = 'plugin://plugin.video.f4mTester/?url=%s&streamtype=HLS&name=[makelist.param2]'%url
     return u
 ]]></expres>
 <page></page>
