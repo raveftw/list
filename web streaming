@@ -48,6 +48,7 @@
 <listrepeat><![CDATA[
 <title>[COLOR red]•[/COLOR][COLOR gold]  [makelist.param2][/COLOR]</title>
 <link>$doregex[get-url]</link>
+<thumbnail>https://i.imgsafe.org/70b3b27c63.png</thumbnail>
 ]]></listrepeat>
 <expres><![CDATA[<a href="(.*?)">(.*?)</a></li>]]></expres>
 <page>http://live-sports-stream.net/</page>
