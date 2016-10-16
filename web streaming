@@ -37,3 +37,44 @@
 <referer>http://urhd.tv/</referer>
 </regex>
 </item>
+
+
+<item>
+<title>[COLOR red]•[/COLOR][COLOR gold]  Canais live-sports-stream.net [/COLOR]</title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[COLOR red]•[/COLOR][COLOR gold]  [makelist.param2][/COLOR]</title>
+<link>$doregex[get-url]</link>
+]]></listrepeat>
+<expres><![CDATA[<a href="(.*?)">(.*?)</a></li>]]></expres>
+<page>http://live-sports-stream.net/</page>
+</regex>
+<regex>
+<name>get-url</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+ import requests, re
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:45.0) Gecko/20100101 Firefox/45.0', 'Referer': ''}
+ iframe1 = re.findall('iframe src="(.*?)"',page_data)[0]
+ source1 = requests.get(iframe1, headers=headers).text
+ iframe2=""
+ try:
+    iframe2 = re.findall('iframe.*?src="(.*?)"',source1)[0]
+ except:
+     pass
+ if iframe2 == "":
+     return "no stream"
+ else:
+     channel = re.findall('pub1-(.*?)"',source1)[0]
+     ptoken = page_data = requests.get('http://www.xeevo.net/arse.js?', headers=headers).text
+     token = re.findall("setupPlayer\('(.*?)'",ptoken)[0]
+     m3u8 = 'http://195.154.169.233/hls/pub1/' + channel + '.m3u8?tok=' + token
+     return m3u8
+]]></expres>
+<page>http://live-sports-stream.net/[makelist.param1]</page>
+<agent>Mozilla/5.0 (X11; Linux i686; rv:45.0) Gecko/20100101 Firefox/45.0</agent>
+<referer></referer>
+</regex>
+</item>
