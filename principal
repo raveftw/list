@@ -12,7 +12,7 @@
 FALTA O NOME NO LINK F4M [makelist.param2] TALVEZ (.*?)
 
 <item>
-<title>[COLOR red]•[/COLOR][COLOR gold]  Listas Team j2mf4[/COLOR] --- [COLOR green]TESTE 14[/COLOR]</title>
+<title>[COLOR red]•[/COLOR][COLOR gold]  Listas Team j2mf4[/COLOR] --- [COLOR green]TESTE 16[/COLOR]</title>
 <link>$doregex[makelist2]</link>
 <regex>
 <name>makelist2</name>
@@ -43,9 +43,9 @@ def GetLSProData(page_data,Cookie_Jar,m):
     url = '[makelist.param3]'
     u = url
     if '.ts' in url:
-        u = 'plugin://plugin.video.f4mTester/?url=%s&streamtype=TSDOWNLOADER&name=test [makelist.param2]'%url
+        u = 'plugin://plugin.video.f4mTester/?url=%s&streamtype=TSDOWNLOADER&name=%s'%url%teste
     elif '.m3u8' in url:
-        u = 'plugin://plugin.video.f4mTester/?url=%s&streamtype=HLS&name=test [makelist.param2]'%url
+        u = 'plugin://plugin.video.f4mTester/?url=%s&streamtype=HLS&name=%s'%url%teste
     return u
 ]]></expres>
 <page></page>
