@@ -43,9 +43,9 @@ def GetLSProData(page_data,Cookie_Jar,m):
     url = '[makelist.param3]'
     u = url
     if '.ts' in url:
-        u = 'plugin://plugin.video.f4mTester/?url=%s&streamtype=TSDOWNLOADER&name=%[makelist.param2]'%url
+        u = 'plugin://plugin.video.f4mTester/?url=%s&streamtype=TSDOWNLOADER&name='[makelist.param2]''%url
     elif '.m3u8' in url:
-        u = 'plugin://plugin.video.f4mTester/?url=%s&streamtype=HLS&name=Team j2mf4'%url
+        u = 'plugin://plugin.video.f4mTester/?url=%s&streamtype=HLS&name='[makelist.param2]''%url
     return u
 ]]></expres>
 <page></page>
