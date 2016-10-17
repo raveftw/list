@@ -1,0 +1,15 @@
+<item>
+<title>[COLOR red]•[/COLOR][COLOR gold]  Apagar Cache[/COLOR]</title>
+<link>_</link>
+<jsonrpc>plugin://plugin.video.xbmchubmaintenance/?url=url&amp;mode=4&amp;name=Clear Cache</jsonrpc>
+<thumbnail>https://i.ytimg.com/vi/jUTZOf-hMkg/hqdefault.jpg</thumbnail>
+<fanart>https://i.imgsafe.org/70b260028a.jpg</fanart>
+</item>
+
+<item>
+<title>[COLOR red]•[/COLOR][COLOR gold]  Maintenance Tool[/COLOR]</title>
+<link>_</link>
+<jsonrpc>plugin://plugin.video.xbmchubmaintenance/</jsonrpc>
+<thumbnail>https://i.ytimg.com/vi/jUTZOf-hMkg/hqdefault.jpg</thumbnail>
+<fanart>https://i.imgsafe.org/70b260028a.jpg</fanart>
+</item>
