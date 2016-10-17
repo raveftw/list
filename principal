@@ -158,8 +158,16 @@ def GetLSProData(page_data,Cookie_Jar,m):
 	<link>_</link>
 	<externallink>https://raw.githubusercontent.com/teamjmflist/list/master/canais%20arenavision</externallink>
 	<thumbnail>https://i.imgsafe.org/70b3b27c63.png</thumbnail>
+	<fanart>https://i.imgsafe.org/70b260028a.jpg</fanart>
 </item>
 
+<item>
+	<title>[COLOR red]•[/COLOR][COLOR gold]  Maintenance Tool [/COLOR]</title>
+	<link>_</link>
+	<externallink>https://raw.githubusercontent.com/teamjmflist/list/master/maintenance%20tool</externallink>
+	<thumbnail>https://i.imgsafe.org/70b3b27c63.png</thumbnail>
+	<fanart>https://i.imgsafe.org/70b260028a.jpg</fanart>
+</item>
 
 <item>
 	<title>[COLOR red]•[/COLOR][COLOR gold]  --| TESTES |--  [/COLOR]</title>
