@@ -1,4 +1,9 @@
-
+<item>
+<title>Apagar Cache</title>
+<link>_</link>
+<jsonrpc>plugin://plugin.video.xbmchubmaintenance/?url=url&amp;mode=4&amp;name=Clear Cache</jsonrpc>
+<thumbnail></thumbnail>
+</item>
 
 <item>
 <title>Sportsnet World</title>
