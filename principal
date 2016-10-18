@@ -135,7 +135,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </regex>
 </item>
 
-<item>     
+<_item>     
 <title>[COLOR red]•[/COLOR][COLOR gold]  Filmes [/COLOR][COLOR green](em testes)[/COLOR]</title>
 <link>_</link>
 <externallink>http://pastebin.com/raw/LU1vp6cS</externallink>
