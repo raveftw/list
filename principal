@@ -81,7 +81,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-<item>
+<_item>
 <title>[COLOR red]•[/COLOR][COLOR gold]  Listas dos membros da Team j2mf4[/COLOR]</title>
 <link>$doregex[makelist2]</link>
 <regex>
