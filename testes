@@ -1,4 +1,24 @@
-
+<item>
+<title>TVificcao</title>
+<link>rtmp://$doregex[ip]/live playpath=tvicrl?id=$doregex[id]&amp;pk=$doregex[pk] conn=S:OK swfUrl=http://www.ezcast.tv/static/scripts/fplayer.swf pageUrl=http://www.embedezcast.com/embedplayer/tvicrl/1/650/500 live=true swfVfy=true timeout=15</link>
+<regex>
+<name>ip</name>
+<expres>.*redirect=([\.\d]+)</expres>
+<page>http://cdn.pubezcast.com:1935/loadbalancer</page>
+</regex>
+<regex>
+<name>id</name>
+<expres>'id=([^&amp;]*)</expres>
+<page>http://www.embedezcast.com/embedplayer/tvicrl/1/650/500</page>
+<referer>http://www.televisaofutebol.com/ezcast.php?chname=tvicrl&height=500&width=650&logofile=images.tvdez.com/logostream.png&logolink=www.estadiofutebol.com/&logoposition=bottom-left&image=images.tvdez.com/fundostream.png&skin=&stretching=exactfit&autostart=true</referer>
+</regex>
+<regex>
+<name>pk</name>
+<expres>pk=(.*?)'</expres>
+<page>http://www.embedezcast.com/embedplayer/tvicrl/1/650/500</page>
+<referer>http://www.televisaofutebol.com/ezcast.php?chname=tvicrl&height=500&width=650&logofile=images.tvdez.com/logostream.png&logolink=www.estadiofutebol.com/&logoposition=bottom-left&image=images.tvdez.com/fundostream.png&skin=&stretching=exactfit&autostart=true</referer>
+</regex>
+</item>
 
 <item>
 <title>Sportsnet World</title>
