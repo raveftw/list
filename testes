@@ -14,7 +14,7 @@ http://09stream.com/ver-fox-hd-online-en-directo-gratis-24h-por-internet/
 <thumbnail></thumbnail>
 </item>
 
-<item>
+<_item>
 <title>TVificcao</title>
 <link>rtmp://$doregex[ip]/live playpath=tvicrl?id=$doregex[id]&amp;pk=$doregex[pk] conn=S:OK swfUrl=http://www.ezcast.tv/static/scripts/fplayer.swf pageUrl=http://www.embedezcast.com/embedplayer/tvicrl/1/650/500 live=true swfVfy=true timeout=15</link>
 <regex>
