@@ -1,4 +1,32 @@
 <item>
+<title>http://1xstream.com/publ/</title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>title:[COLOR blue][makelist.param3][/COLOR]--[makelist.param2]</title>
+<link>$doregex[makelist2]</link>
+<thumbnail></thumbnail>
+]]></listrepeat>
+<expres><![CDATA[(?s)(sendeplan".*?div_event">(\d+:.*?)<img src="/.*?"> (.*?)<div class="live">.*?</span></div></div>.*?)(?!=\</a>)]]></expres>
+<page>http://1xstream.com/publ/</page>
+</regex>
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<title>link:[COLOR blue][makelist2.param1][/COLOR]</title>
+<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=[makelist2.param1]</link>
+<link>[makelist2.param1]</link>
+<thumbnail></thumbnail>
+]]></listrepeat>
+<expres><![CDATA[a href="(http://.*?)"]]></expres>
+<page>[makelist.param1]</page>
+</regex>
+</item>
+
+
+
+<item>
 <title>https://www.facebook.com/Arenatuga/?fref=ts</title>
 <link>$doregex[makelist]</link>
 <regex>
