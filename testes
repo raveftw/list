@@ -1,3 +1,49 @@
+<item>
+<title>https://www.facebook.com/Arenatuga/?fref=ts</title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist.param2]</title>
+<link>$doregex[get-url]</link>
+<referer></referer>
+<thumbnail></thumbnail>
+]]></listrepeat>
+<expres><![CDATA[live no.*?href="(.*?)".*?<p>(.*?)<]]></expres>
+<page>$doregex[sources]</page>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>get-url</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,suf_url='[makelist.param1]'):
+ url = 'https://www.facebook.com' + suf_url
+ import YDStreamExtractor
+ #YDStreamExtractor.disableDASHVideo(True) 
+ vid = YDStreamExtractor.getVideoInfo(url)
+ stream_url = vid.streamURL() 
+ return stream_url
+]]></expres>
+<page></page>
+</regex>
+<regex>
+<name>sources</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+ import re
+ import requests
+ url= 'https://www.facebook.com/Arenatuga/?fref=ts'
+ headers = {'User-Agent': 'Mozilla/5.0 (X11 Linux i686 rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Referer': '','Accept-Language':"en,en-US;q=0.5"}
+ source = requests.get(url, headers=headers).text
+ return source
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+</item>
+
+
+
 <___item>
 <title>TEST Example M3U File -- Makelist</title>
 <link>$doregex[makelist]</link>
