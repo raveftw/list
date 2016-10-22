@@ -1,3 +1,28 @@
+<___item>
+<title>TEST Example M3U File -- Makelist</title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist.param1]</title>
+<link>$doregex[url]|User-Agent=Mozilla/5.0 (Windows NT 6.3; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0</link>
+]]></listrepeat>
+<expres><![CDATA[de[1,2].*#EXTINF:-1,(.*?)<.*\s.*\s.*?(http.*?)<]]></expres>
+<page>http://pastebin.com/c6DqWQ65</page>
+</regex>
+<regex>
+<name>url</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urllib, xbmc
+    url = '[makelist.param2]'    
+    url = 'plugin://plugin.video.f4mTester/?streamtype=TSDOWNLOADER&url=%s'%urllib.quote_plus(url)
+    return url
+]]></expres>
+<page></page>
+</regex>
+</item>
+
 <item>
 <title>SporTV teste</title>
 <sportsdevil>http://tvaborla.com/Live1.html</sportsdevil>
