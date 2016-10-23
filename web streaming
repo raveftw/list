@@ -1,6 +1,8 @@
 <item>
 <title>[COLOR red]•[/COLOR][COLOR gold]  ArenaTuga - Desporto direto [/COLOR]</title>
 <link>$doregex[makelist]</link>
+<thumbnail>https://i.imgsafe.org/70b3b27c63.png</thumbnail>
+<fanart>https://i.imgsafe.org/70b260028a.jpg</fanart>
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
