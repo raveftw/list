@@ -45,21 +45,21 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </item>
 
 <item>
-	<title>[COLOR red]•[/COLOR][COLOR gold]  Canais tvaborla.com [/COLOR]</title>
+	<title>[COLOR red]•[/COLOR][COLOR gold]  tvaborla.com [/COLOR]</title>
 	<link>_</link>
 	<externallink>https://raw.githubusercontent.com/teamjmflist/list/master/tvaborla.com</externallink>
 	<thumbnail>https://i.imgsafe.org/70b3b27c63.png</thumbnail>
 </item>
 
 <item>
-	<title>[COLOR red]•[/COLOR][COLOR gold]  Canais estádiofutebol.com [/COLOR]</title>
+	<title>[COLOR red]•[/COLOR][COLOR gold]  estadiofutebol.com [/COLOR]</title>
 	<link>_</link>
 	<externallink>https://raw.githubusercontent.com/teamjmflist/list/master/estadiofutebol.com</externallink>
 	<thumbnail>https://i.imgsafe.org/70b3b27c63.png</thumbnail>
 </item>
 
 <item>
-	<title>[COLOR red]•[/COLOR][COLOR gold]  Canais liveonlinetv247.info [/COLOR]</title>
+	<title>[COLOR red]•[/COLOR][COLOR gold]  liveonlinetv247.info [/COLOR]</title>
 	<link>_</link>
 	<externallink>https://raw.githubusercontent.com/teamjmflist/list/master/liveonlinetv247.info</externallink>
 	<thumbnail>https://i.imgsafe.org/70b3b27c63.png</thumbnail>
@@ -67,7 +67,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <item>
-<title>[COLOR red]•[/COLOR][COLOR gold]  Canais urhd.tv [/COLOR]</title>
+<title>[COLOR red]•[/COLOR][COLOR gold]  urhd.tv [/COLOR]</title>
 <link>$doregex[makelist]</link>
 <thumbnail>https://i.imgsafe.org/70b3b27c63.png</thumbnail>
 <regex>
@@ -93,7 +93,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <item>
-<title>[COLOR red]•[/COLOR][COLOR gold]  Canais live-sports-stream.net - Agenda em http://live-sports-stream.net/schedule/[/COLOR]</title>
+<title>[COLOR red]•[/COLOR][COLOR gold]  live-sports-stream.net - Agenda: live-sports-stream.net/schedule[/COLOR]</title>
 <link>$doregex[makelist]</link>
 <thumbnail>https://i.imgsafe.org/70b3b27c63.png</thumbnail>
 <regex>
