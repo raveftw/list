@@ -1,4 +1,11 @@
 <item>
+<title>http://btvsports.site/stream3.html - SD</title>
+<sportsdevil>http://btvsports.site/stream3.html</sportsdevil>
+<referer>http://btvsports.site/</referer>
+<thumbnail></thumbnail>
+</item>
+
+<item>
 <title>http://btvsports.site/stream3.html</title>
 <link>$doregex[get-rtmp] playpath=240 swfUrl=http://sostart.org/jw/jwplayer.flash.swf live=1 token=SECURET0KEN#yw%.?()@W! pageUrl=http://sostart.org/stream.php?id=240&width=730&height=440 timeout=14</link>
 <regex>
