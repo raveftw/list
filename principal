@@ -9,47 +9,9 @@
 	<fanart>https://i.imgsafe.org/70b260028a.jpg</fanart>
 </item>
 
-<item>
-<title>[COLOR red]•[/COLOR][COLOR gold]  Listas Team j2mf4 - teste 2[/COLOR]</title>
-<link>$doregex[makelist2]</link>
-<regex>
-<name>makelist2</name>
-<listrepeat><![CDATA[
- <title>[COLOR red]•[/COLOR][COLOR gold]  [makelist2.param1][/COLOR]</title>
- <link>$doregex[makelist]</link>
- <thumbnail>https://i.imgsafe.org/70b3b27c63.png</thumbnail>
- <fanart>https://i.imgsafe.org/70b260028a.jpg</fanart>
- ]]></listrepeat>
-<expres>Lista:"(.*?)" URL="(.*?)"</expres>
-<page>https://pastebin.com/raw/kg6T6Cju</page>
-</regex>
-<regex>
-<name>makelist</name>
-<listrepeat><![CDATA[
- <title>[COLOR red]•[/COLOR][COLOR gold]  [makelist.param2][/COLOR]</title>
- <link>$doregex[url]<link>
- <thumbnail>https://i.imgsafe.org/70b3b27c63.png</thumbnail>
- <fanart>https://i.imgsafe.org/70b260028a.jpg</fanart>
- ]]></listrepeat>
-<expres>EXTINF:(.*),(.*)\n(.*[ts])</expres>
-<page>[makelist2.param2]</page>
-</regex>
-<regex>
-<name>url</name>
-<expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m):
-    url = '[makelist.param3]'
-    u = url
-    if '.ts' in url:
-        u = 'plugin://plugin.video.f4mTester/?url=%s&streamtype=TSDOWNLOADER&name=Team j2mf4'%url
-    return u
-]]></expres>
-<page></page>
-</regex>
-<thumbnail>https://i.imgsafe.org/70b3b27c63.png</thumbnail>
-</item>
 
-<item>
+
+<_item>
 <title>[COLOR red]•[/COLOR][COLOR gold]  Listas Team j2mf4[/COLOR]</title>
 <link>$doregex[makelist2]</link>
 <regex>
@@ -91,7 +53,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>https://i.imgsafe.org/70b3b27c63.png</thumbnail>
 </item>
 
-<_item>
+<item>
 <title>[COLOR red]•[/COLOR][COLOR gold]  Listas Team j2mf4[/COLOR]</title>
 <link>$doregex[makelist2]</link>
 <regex>
@@ -102,17 +64,17 @@ def GetLSProData(page_data,Cookie_Jar,m):
  <thumbnail>https://i.imgsafe.org/70b3b27c63.png</thumbnail>
  <fanart></fanart>
  ]]></listrepeat>
-<expres>Lista:"(.*?)" URL="(.*?)"; regex"(.*?)"</expres>
-<page>https://raw.githubusercontent.com/teamjmflist/list/master/listas%20team%20j2mf4</page>
+<expres>Lista:"(.*?)" URL="(.*?)"</expres>
+<page>https://pastebin.com/raw/kg6T6Cju</page>
 </regex>
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
  <title>[COLOR red]•[/COLOR][COLOR gold]  [makelist.param1][/COLOR]</title>
- <link>plugin://plugin.video.f4mTester/?url=[makelist.param2]&amp;streamtype=TSDOWNLOADER&amp;maxbitrate=0&amp;proxy=None&amp;name=Team j2mf4: [makelist.param1]</link>
+ <link>plugin://plugin.video.f4mTester/?url=[makelist.param3]&amp;streamtype=TSDOWNLOADER&amp;maxbitrate=0&amp;proxy=None&amp;name=Team j2mf4: [makelist.param2]</link>
  <thumbnail>https://i.imgsafe.org/70b3b27c63.png</thumbnail>
  ]]></listrepeat>
-<expres>#EXTINF:-1,[makelist2.param3](.*?)\n(.*)</expres>
+<expres>EXTINF:(.*),(.*)\n(.*[ts|mkv|mp4|m3u8])</expres>
 <page>[makelist2.param2]</page>
 </regex>
 <thumbnail>https://i.imgsafe.org/70b3b27c63.png</thumbnail>
