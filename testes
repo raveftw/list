@@ -1,4 +1,15 @@
 <item>
+<title>http://btvsports.site/stream3.html</title>
+<link>$doregex[get-rtmp] playpath=240 swfUrl=http://sostart.org/jw/jwplayer.flash.swf live=1 token=SECURET0KEN#yw%.?()@W! pageUrl=http://sostart.org/stream.php?id=240&width=730&height=440 timeout=14</link>
+<regex>
+<name>get-rtmp</name>
+<expres>file:'(.*?)'</expres>
+<page>http://sostart.org/stream.php?id=240&amp;width=730&amp;height=440</page>
+<referer>http://btvsports.site/channel3.html</referer>
+</regex>
+</item>
+
+<item>
 <title>http://1xstream.com/publ/</title>
 <link>$doregex[makelist]</link>
 <regex>
