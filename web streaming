@@ -93,7 +93,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <item>
-<title>[COLOR red]•[/COLOR][COLOR gold]  Canais live-sports-stream.net [/COLOR]</title>
+<title>[COLOR red]•[/COLOR][COLOR gold]  Canais live-sports-stream.net - Agenda em http://live-sports-stream.net/schedule/[/COLOR]</title>
 <link>$doregex[makelist]</link>
 <thumbnail>https://i.imgsafe.org/70b3b27c63.png</thumbnail>
 <regex>
