@@ -74,7 +74,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  <link>plugin://plugin.video.f4mTester/?url=[makelist.param3]&amp;streamtype=TSDOWNLOADER&amp;maxbitrate=0&amp;proxy=None&amp;name=Team j2mf4: [makelist.param2]</link>
  <thumbnail>https://i.imgsafe.org/70b3b27c63.png</thumbnail>
  ]]></listrepeat>
-<expres>EXTINF:(.*),(.*)\n(.*[ts|mkv|mp4|m3u8])</expres>
+<expres>EXTINF:(.*),(.*)\n(.*)</expres>
 <page>[makelist2.param2]</page>
 </regex>
 <thumbnail>https://i.imgsafe.org/70b3b27c63.png</thumbnail>
