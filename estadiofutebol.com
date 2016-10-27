@@ -1,7 +1,7 @@
 <item>
 <title>[COLOR red]•[/COLOR][COLOR gold]  Sport TV 1[/COLOR]</title>
-<sportsdevil>http://www.estadiofutebol.com/gratis/sporttv</sportsdevil>
-<referer>http://www.estadiofutebol.com/</referer>
+<sportsdevil>http://cdn2.zuuk.org/sporttv.php</sportsdevil>
+<referer>http://cdn2.zuuk.org/</referer>
 <thumbnail>https://i.imgsafe.org/70b3b27c63.png</thumbnail>
 <fanart>https://i.imgsafe.org/70b260028a.jpg</fanart>
 </item>
