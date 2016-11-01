@@ -1,4 +1,30 @@
-
+<item>
+<title>http://www.3live.tv/</title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist.param1] id=[makelist.param2]</title>
+<link>NA</link>
+<thumbnail></thumbnail>
+]]></listrepeat>
+<expres><![CDATA[(.*?)\((.*?)\).*?<]]></expres>
+<page>$doregex[select]</page>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+ url = 'http://www.3live.tv/'
+ import requests, re, base64
+ headers = {'User-Agent': 'Mozilla/5.0 (X11 Linux i686 rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0'}
+ source = requests.get(url, headers = headers).text
+ select= re.findall('<p><b><i>(?s)(.*)', source)[0].replace('</i></b>',' ()').replace('<p><br><b><i>','')
+ return select
+ ]]></expres>
+<page></page>
+</regex>
 
 <_item>
 <title>http://btvsports.site/stream3.html - SD</title>
