@@ -34,7 +34,7 @@ def GetLSProData(page_data,Cookie_Jar,m,suf_url='[makelist.param1]'):
 def GetLSProData(page_data,Cookie_Jar,m):
  import re
  import requests
- url= 'https://www.facebook.com/ArenaTugaHD/?fref=ts'
+ url= 'https://www.facebook.com/Arenatuga/?fref=ts'
  oldurl= 'https://www.facebook.com/Arenatuga/?fref=ts'
  headers = {'User-Agent': 'Mozilla/5.0 (X11 Linux i686 rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Referer': '','Accept-Language':"en,en-US;q=0.5"}
  source = requests.get(url, headers=headers).text
