@@ -5,7 +5,7 @@
 	<title>[COLOR red]•[/COLOR][COLOR gold]  Listas Team j2mf4 [/COLOR]</title>
 	<link>_</link>
 	<externallink>https://raw.githubusercontent.com/teamjmflist/list/master/listas%20team%20j2mf4</externallink>
-	<thumbnail>https://i.imgsafe.org/9e1c8ae8b0.png</thumbnail>
+	<thumbnail>https://i.imgsafe.org/70b3b27c63.png</thumbnail>
 	<fanart>https://i.imgsafe.org/70b260028a.jpg</fanart>
 </item>
 
@@ -174,5 +174,5 @@ def GetLSProData(page_data,Cookie_Jar,m):
 	<title>[COLOR red]•[/COLOR][COLOR gold]  --| TESTES |--  [/COLOR]</title>
 	<link>_</link>
 	<externallink>https://raw.githubusercontent.com/teamjmflist/list/master/testes</externallink>
-	<thumbnail>https://i.imgsafe.org/70b3b27c63.png</thumbnail>
+	<thumbnail>https://i.imgsafe.org/9e1c8ae8b0.png</thumbnail>
 </item>
