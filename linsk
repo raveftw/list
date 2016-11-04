@@ -1,0 +1,6 @@
+<item>
+<title>Multilink test 6</title>
+<link>plugin://plugin.video.f4mTester/?url=http://tvdasogra.com:8880/live/trial6/trial199/927.ts&amp;name=RTP 1;streamtype=TSDOWNLOADER$$lsname=Link 1</link>
+<link>plugin://plugin.video.f4mTester/?url=http://tvdasogra.com:8880/live/trial6/trial199/734.ts&amp;name=RTP 1;streamtype=TSDOWNLOADER$$lsname=Link 2</link>
+<thumbnail>http://www.lyngsat-logo.com/logo/tv/ss/sport_tv1_pt.png</thumbnail>
+</item>
