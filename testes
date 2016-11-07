@@ -1,4 +1,14 @@
 <item>
+<title>Animalplanet LIVE 24/7 Scriptv1</title>
+<link>$doregex[get-link]</link>
+<regex>
+<name>get-link</name>
+<expres>$pyFunction:get_ustream('http://iphone-streaming.ustream.tv/ustreamVideo/12762028/streams/live/playlist.m3u8')</expres>
+<page></page>
+</regex> 
+</item>
+
+<item>
 <title>List-----</title>
 <link>$doregex[makelist]</link>
 <regex>
