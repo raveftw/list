@@ -1,3 +1,18 @@
+<item>
+<title>[COLOR red]•[/COLOR][COLOR gold]  Sport TV 1[/COLOR]</title>
+<link>plugin://plugin.video.f4mTester/?url=[makelist.param2]&amp;streamtype=TSDOWNLOADER&amp;maxbitrate=0&amp;proxy=None&amp;name=Sport TV 1$$lsname=[makelist.param11]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+  ]]></listrepeat>
+<expres>"sporttv1"Link(.*)" URL=(.*)</expres>
+<page>https://pastebin.com/raw/vBPzSQCZ</page>
+</regex> 
+<thumbnail>https://i.imgsafe.org/70b3b27c63.png</thumbnail>
+</item>
+
+
+
 
 <item>
 <title>List-----</title>
